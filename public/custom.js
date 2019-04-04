@@ -1,18 +1,37 @@
 //first method
-// function loadJSON(callback) {
-//     var xobj = new XMLHttpRequest();
-//     xobj.overrideMimeType("application/json");
-//     xobj.open("GET", "hieroglyphs.json", true);
-//     xobj.onreadystatechange = function () {
-//         if (xobj.readyState == 4 && xobj.status == "200") {
-//             callback(JSON.parse(xobj.responseText));
-//         }
-//     };
-//     xobj.send(null);
-// };
-// loadJSON(function (json) {
-//     console.dir(json);
-// });
+function loadJSON(callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open("GET", "hieroglyphs.json", true);
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(JSON.parse(xobj.responseText));
+        }
+    };
+    xobj.send(null);
+};
+
+loadJSON(function (scrawl) {
+    console.dir(scrawl);
+
+    var _body = document.getElementsByTagName("body")[0];
+
+    if (window.navigator.language == "ru") {
+        _body.innerHTML = "<div class=\"logo\">Японский по Sekiro: Shadows Die Twice</div>";
+    }
+    else {
+        _body.innerHTML = "<div class=\"logo\">Japanese by Sekiro: Shadows Die Twice</div>";
+    }
+
+    for (var i = 0; i < Object.keys(scrawl).length; i++) {
+        if (window.navigator.language == "ru")
+            _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value_ru + "</div>" + "<div>" + scrawl[i].description_ru + "</div>" + "</div>";
+        else
+            _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value + "</div>" + "<div>" + scrawl[i].description + "</div>" + "</div>";
+    }
+
+    _body.innerHTML += "<div class=\"footer\">Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.</div>"
+});
 
 //second method
 //< script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script >
@@ -20,7 +39,7 @@
 //     console.dir(myjson);
 // });
 
-var scrawl = {
+/*var scrawl = {
     "0": {
         "hieroglyph": "隻狼",
         "pronunciation": "sekiro",
@@ -125,19 +144,4 @@ var scrawl = {
         "description": "At the moment of poisoning",
         "description_ru": "При отравлении"
     }
-}
-console.dir(scrawl);
-
-var _body = document.getElementsByTagName("body")[0];
-
-if (window.navigator.language == "ru")
-    _body.innerHTML = "<div class=\"logo\">Японский по Sekiro: Shadows Die Twice</div>";
-else
-    _body.innerHTML = "<div class=\"logo\">Japanese by Sekiro: Shadows Die Twice</div>";
-
-for (var i = 0; i < Object.keys(scrawl).length; i++) {
-    if (window.navigator.language == "ru")
-        _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value_ru + "</div>" + "<div>" + scrawl[i].description_ru + "</div>" + "</div>";
-    else
-        _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value + "</div>" + "<div>" + scrawl[i].description + "</div>" + "</div>";
-}
+}*/
