@@ -129,6 +129,7 @@ var scrawl = {
 console.dir(scrawl);
 
 var _body = document.getElementsByTagName("body")[0];
+
 if (window.navigator.language == "ru")
     _body.innerHTML = "<div class=\"logo\">Японский по Sekiro: Shadows Die Twice</div>";
 else
@@ -136,7 +137,7 @@ else
 
 for (var i = 0; i < Object.keys(scrawl).length; i++) {
     if (window.navigator.language == "ru")
-        _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\">" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<br>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value_ru + "</div>" + "<div>" + scrawl[i].description_ru + "</div>" + "</div>";
+        _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value_ru + "</div>" + "<div>" + scrawl[i].description_ru + "</div>" + "</div>";
     else
-        _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\">" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<br>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value + "</div>" + "<div>" + scrawl[i].description + "</div>" + "</div>";
+        _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value + "</div>" + "<div>" + scrawl[i].description + "</div>" + "</div>";
 }
