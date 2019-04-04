@@ -1,1 +1,1 @@
-#Japanese by Sekiro: Shadows Die Twice
+# Japanese by Sekiro: Shadows Die Twice
