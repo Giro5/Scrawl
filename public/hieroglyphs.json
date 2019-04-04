@@ -1,0 +1,90 @@
+﻿{
+    "隻狼": {
+        "pronunciation": "sekiro",
+        "value": "one-armed wolf",
+        "value_ru": "однорукий волк",
+        "description": "character moniker & game title",
+        "隻": {
+            "pronunciation": "seki",
+            "value": "one-armed"
+        },
+        "狼": {
+            "pronunciation": "okami",
+            "value": "wolf"
+        }
+    },
+    "死": {
+        "pronunciation": "shi",
+        "value": "death",
+        "value_ru": "смерть",
+        "description": "at the moment of death"
+    },
+    "危": {
+        "pronunciation": "ki",
+        "value": "dangerous attack",
+        "value_ru": "берегись",
+        "description": "at the moment of a dangerous attack"
+    },
+    "治": {
+        "pronunciation": "osamu",
+        "value": "heal",
+        "value_ru": "лечение",
+        "description": "at the moment of use a healing gourd"
+    },
+    "回生": {
+        "pronunciation": "kaisei",
+        "value": "resurrection",
+        "value_ru": "воскрешение",
+        "description": "at the moment of resurrection",
+        "回": {
+            "pronunciation": "kai",
+            "value": "times"
+        },
+        "生": {
+            "pronunciation": "nama",
+            "value": "birth"
+        }
+    },
+    "冥助あリ": {
+        "pronunciation": "mei suke a ri",
+        "value": "unseen aid",
+        "value_ru": "невидимая помощь",
+        "description": "at the moment of activation of an unseen aid",
+        "冥": {
+            "pronunciation": "mei",
+            "value": "moth"
+        },
+        "助": {
+            "pronunciation": "suke",
+            "value": "assistant"
+        },
+        "あ": {
+            "pronunciation": "a",
+            "value": "ah"
+        },
+        "リ": {
+            "pronunciation": "ri",
+            "value": "the"
+        }
+    },
+    "吽護": {
+        "pronunciation": "un mamoru",
+        "value": "protection",
+        "value_ru": "защита",
+        "description": "at the moment of use a ungo's sugar",
+        "吽": {
+            "pronunciation": "un",
+            "value": "moth"
+        },
+        "護": {
+            "pronunciation": "mamoru",
+            "value": "protection"
+        }
+    },
+    "毒": {
+        "pronunciation": "docu",
+        "value": "poison",
+        "value_ru": "яд",
+        "description": "at the moment of poisoning"
+    }
+}
