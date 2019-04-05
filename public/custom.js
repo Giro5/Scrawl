@@ -25,10 +25,18 @@ loadJSON(function (scrawl) {
 
     for (var i = 0; i < Object.keys(scrawl).length; i++) {
         if (window.navigator.language == "ru")
-            _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value_ru + "</div>" + "<div>" + scrawl[i].description_ru + "</div>" + "</div>";
+            _body.innerHTML += "<br><div class=\"scrawl\"><div class=\"hieroglyph\" style=\"color:" + scrawl[i].color
+                + "\">" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("")
+                + "</div><div>" + scrawl[i].value_ru + "</div><div>" + scrawl[i].description_ru + "</div></div>";
         else
-            _body.innerHTML += "<div class=\"scrawl\"><div class=\"hieroglyph\"><br>" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("") + "</div>" + "<div>" + scrawl[i].value + "</div>" + "<div>" + scrawl[i].description + "</div>" + "</div>";
+            _body.innerHTML += "<br><div class=\"scrawl\"><div class=\"hieroglyph\" style=\"color:" + scrawl[i].color
+                + "\">" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("")
+                + "</div><div>" + scrawl[i].value + "</div><div>" + scrawl[i].description + "</div></div>";
     }
+    // var glphs = document.getElementsByClassName("hieroglyph");
+    // for (var i = 0; i < glphs.length; i++) {
+    //     glphs
+    // }
 
     _body.innerHTML += "<div class=\"footer\">Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.</div>"
 });

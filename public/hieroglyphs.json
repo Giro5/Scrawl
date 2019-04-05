@@ -21,7 +21,8 @@
         "value": "Death",
         "value_ru": "Смерть",
         "description": "At the moment of death",
-        "description_ru": "При смерти"
+        "description_ru": "При смерти",
+        "color": "#c32d2e"
     },
     "2": {
         "hieroglyph": "危",
@@ -29,7 +30,8 @@
         "value": "Dangerous attack",
         "value_ru": "Берегись",
         "description": "At the moment of a dangerous attack",
-        "description_ru": "При опасной атаке"
+        "description_ru": "При опасной атаке",
+        "color": "#cd5445"
     },
     "3": {
         "hieroglyph": "治",
@@ -37,7 +39,8 @@
         "value": "Heal",
         "value_ru": "Лечение",
         "description": "At the moment of use a healing gourd",
-        "description_ru": "При испоьзовании лечащей тыквы"
+        "description_ru": "При испоьзовании лечащей тыквы",
+        "color": "#79c49b"
     },
     "4": {
         "hieroglyph": "回生",
@@ -46,6 +49,7 @@
         "value_ru": "Воскрешение",
         "description": "At the moment of resurrection",
         "description_ru": "При воскрешении",
+        "color": "#fce6e5",
         "回": {
             "pronunciation": "kai",
             "value": "Times"
@@ -62,6 +66,7 @@
         "value_ru": "Невидимая помощь",
         "description": "At the moment of activation of an unseen aid",
         "description_ru": "При срабатывании невидимой помощи",
+        "color": "#8ea8d3",
         "冥": {
             "pronunciation": "mei",
             "value": "Moth"
@@ -86,6 +91,7 @@
         "value_ru": "Защита",
         "description": "At the moment of use a Ungo's sugar",
         "description_ru": "При использовании леденца Унго",
+        "color": "#6d86d9",
         "吽": {
             "pronunciation": "un",
             "value": "Moth"
@@ -101,6 +107,7 @@
         "value": "Poison",
         "value_ru": "Яд",
         "description": "At the moment of poisoning",
-        "description_ru": "При отравлении"
+        "description_ru": "При отравлении",
+        "color": "#ccff6a"
     }
 }
