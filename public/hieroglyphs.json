@@ -4,8 +4,9 @@
         "pronunciation": "sekiro",
         "value": "One-armed wolf",
         "value_ru": "Однорукий волк",
-        "description": "Character moniker & game title",
+        "description": "Character moniker and game title",
         "description_ru": "Кличка персонажа и название игры",
+        "color": "#e1ebe9",
         "隻": {
             "pronunciation": "seki",
             "value": "One-armed"
@@ -27,7 +28,7 @@
     "2": {
         "hieroglyph": "危",
         "pronunciation": "ki",
-        "value": "Dangerous attack",
+        "value": "Danger",
         "value_ru": "Берегись",
         "description": "At the moment of a dangerous attack",
         "description_ru": "При опасной атаке",
@@ -39,7 +40,7 @@
         "value": "Heal",
         "value_ru": "Лечение",
         "description": "At the moment of use a healing gourd",
-        "description_ru": "При испоьзовании лечащей тыквы",
+        "description_ru": "При испоьзовании фляги с лекарством",
         "color": "#79c49b"
     },
     "4": {
