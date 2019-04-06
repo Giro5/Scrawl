@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scrawl</title>
+    <title>Japanese by Sekiro: Shadows Die Twice</title>
     <style>
         body {
             text-align: center;
@@ -20,22 +20,18 @@
             font-size: 30px;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         .hieroglyph {
             font-family: SimSun, NSimSun;
             font-size: 100px;
-            /* display: flex;
-            flex-direction: column; */
+            word-wrap: break-word;
+            width: 100px;
         }
 
         .logo {
             font-size: 40px;
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
         }
 
         .footer {
@@ -55,11 +51,17 @@
     </style>
 
     <!-- css & js -->
-    <script src="custom.js" async defer></script>
+    <script src="custom.js"></script>
     <!-- <link rel="stylesheet" href="style_doc.css"> -->
 </head>
 
 <body>
+    <div class="logo">
+        Japanese by Sekiro: Shadows Die Twice
+    </div>
+
+    <!-- connections to json -->
+
     <!-- first method -->
     <!-- <script>
         function loadJSON(callback) {

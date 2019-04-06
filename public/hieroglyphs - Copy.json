@@ -1,5 +1,5 @@
 ﻿{
-    "0": {
+    "隻狼": {
         "hieroglyph": "隻狼",
         "pronunciation": "sekiro",
         "value": "One-armed wolf",
@@ -16,7 +16,7 @@
             "value": "Wolf"
         }
     },
-    "1": {
+    "死": {
         "hieroglyph": "死",
         "pronunciation": "shi",
         "value": "Death",
@@ -25,7 +25,7 @@
         "description_ru": "При погибели",
         "color": "#c32d2e"
     },
-    "2": {
+    "危": {
         "hieroglyph": "危",
         "pronunciation": "ki",
         "value": "Danger",
@@ -34,7 +34,7 @@
         "description_ru": "При опасной атаке",
         "color": "#cd5445"
     },
-    "3": {
+    "治": {
         "hieroglyph": "治",
         "pronunciation": "osamu",
         "value": "Heal",
@@ -43,7 +43,7 @@
         "description_ru": "При испоьзовании фляги с лекарством",
         "color": "#79c49b"
     },
-    "4": {
+    "回生": {
         "hieroglyph": "回生",
         "pronunciation": "kaisei",
         "value": "Resurrection",
@@ -60,7 +60,7 @@
             "value": "Birth"
         }
     },
-    "5": {
+    "冥助あリ": {
         "hieroglyph": "冥助あリ",
         "pronunciation": "mei suke a ri",
         "value": "Unseen aid",
@@ -85,14 +85,14 @@
             "value": "The"
         }
     },
-    "6": {
+    "吽護": {
         "hieroglyph": "吽護",
         "pronunciation": "un mamoru",
         "value": "Protection",
         "value_ru": "Защита",
         "description": "At the moment of use a Ungo's sugar",
         "description_ru": "При использовании леденца Унго",
-        "color": "#6d86d9",
+        "color": "#516cbd",
         "吽": {
             "pronunciation": "un",
             "value": "Moth"
@@ -102,7 +102,7 @@
             "value": "Protection"
         }
     },
-    "7": {
+    "毒": {
         "hieroglyph": "毒",
         "pronunciation": "docu",
         "value": "Poison",
@@ -110,5 +110,57 @@
         "description": "At the moment of poisoning",
         "description_ru": "При отравлении",
         "color": "#ccff6a"
+    },
+    "炎": {
+        "hieroglyph": "炎",
+        "pronunciation": "honō",
+        "value": "Flame",
+        "value_ru": "Пламя",
+        "description": "At the moment of burn",
+        "description_ru": "При ожоге",
+        "color": "#fa8132"
+    },
+    "炎よ": {
+        "hieroglyph": "炎よ",
+        "pronunciation": "honō yo",
+        "value": "Burn",
+        "value_ru": "Поджег",
+        "description": "At the moment of burning",
+        "description_ru": "При горении",
+        "color": "#f5d183",
+        "炎": {
+            "pronunciation": "honō",
+            "value": "Flame"
+        },
+        "よ": {
+            "pronunciation": "yo",
+            "value": "the"
+        }
+    },
+    "耐炎": {
+        "hieroglyph": "耐炎",
+        "pronunciation": "taien",
+        "value": "Flame resistance",
+        "value_ru": "Защита от огня",
+        "description": "At the moment of use withered red gourd or after use ministry dousing powder",
+        "description_ru": "При использовании иссушенной красной фляги или после использования порошка огнестойкости",
+        "color": "#fe9506",
+        "耐": {
+            "pronunciation": "tai",
+            "value": "resistance"
+        },
+        "炎": {
+            "pronunciation": "honō",
+            "value": "Flame"
+        }
+    },
+    "癒": {
+        "hieroglyph": "癒",
+        "pronunciation": "yu",
+        "value": "Healing",
+        "value_ru": "Исцеление",
+        "description": "At the moment of use ministry dousing powder or antidote powder",
+        "description_ru": "При использовании порошка огнестойкости или порошок-противоядие",
+        "color": "#e1ebe9"
     }
 }
