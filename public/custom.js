@@ -2,7 +2,7 @@
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open("GET", "hieroglyphs - Copy.json", true);
+    xobj.open("GET", "hieroglyphs.json", true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(JSON.parse(xobj.responseText));
