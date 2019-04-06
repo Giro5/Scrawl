@@ -26,7 +26,7 @@ loadJSON(function (scrawl) {
     for (var i = 0; i < Object.keys(scrawl).length; i++) {
         if (window.navigator.language == "ru")
             _body.innerHTML += "<br><div class=\"scrawl\"><div class=\"hieroglyph\" style=\"color:" + scrawl[i].color
-                + "\">" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("")
+                + "\"><a href=\"translated\\" + scrawl[i].hieroglyph + ".jpg\">" + String(scrawl[i].hieroglyph).split("").map(function (str) { return str = "<p>" + str; }).join("")
                 + "</div><div>" + scrawl[i].value_ru + "</div><div>" + scrawl[i].description_ru + "</div></div>";
         else
             _body.innerHTML += "<br><div class=\"scrawl\"><div class=\"hieroglyph\" style=\"color:" + scrawl[i].color
