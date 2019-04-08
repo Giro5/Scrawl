@@ -30,16 +30,16 @@
         "pronunciation": "ki",
         "value": "Danger",
         "value_ru": "Берегись",
-        "description": "At the moment of a dangerous attack",
+        "description": "At the moment of the dangerous attack",
         "description_ru": "При опасной атаке",
         "color": "#e33d45"
     },
     "治": {
         "hieroglyph": "治",
         "pronunciation": "osamu",
-        "value": "Heal",
+        "value": "Treatment",
         "value_ru": "Лечение",
-        "description": "At the moment of use a healing gourd",
+        "description": "At the moment of use the healing gourd",
         "description_ru": "При испоьзовании фляги с лекарством",
         "color": "#79c49b"
     },
@@ -65,7 +65,7 @@
         "pronunciation": "mei suke a ri",
         "value": "Unseen aid",
         "value_ru": "Невидимая помощь",
-        "description": "At the moment of activation of an unseen aid",
+        "description": "At the moment of activation of the unseen aid",
         "description_ru": "При срабатывании невидимой помощи",
         "color": "#8ea8d3",
         "冥": {
@@ -90,7 +90,7 @@
         "pronunciation": "un mamoru",
         "value": "Protection",
         "value_ru": "Защита",
-        "description": "At the moment of use a Ungo's sugar",
+        "description": "At the moment of use the Ungo's sugar",
         "description_ru": "При использовании леденца Унго",
         "color": "#435da8",
         "吽": {
@@ -142,7 +142,7 @@
         "pronunciation": "taien",
         "value": "Flame resistance",
         "value_ru": "Защита от огня",
-        "description": "At the moment of use withered red gourd or after use ministry dousing powder",
+        "description": "At the moment of use the withered red gourd or after use the ministry dousing powder",
         "description_ru": "При использовании иссушенной красной фляги или после использования порошка огнестойкости",
         "color": "#fe9506",
         "耐": {
@@ -157,10 +157,10 @@
     "癒": {
         "hieroglyph": "癒",
         "pronunciation": "yu",
-        "value": "Healing",
+        "value": "Cure",
         "value_ru": "Исцеление",
-        "description": "At the moment of use ministry dousing powder or antidote powder",
-        "description_ru": "При использовании порошка огнестойкости или порошок-противоядие",
+        "description": "At the moment of use the ministry dousing powder or the antidote powder or the pacifying agent",
+        "description_ru": "При использовании порошка огнестойкости или порошка-противоядия или успокаивающего средства",
         "color": "#e1ebe9"
     },
     "阿攻": {
@@ -168,7 +168,7 @@
         "pronunciation": "a kou",
         "value": "Assault",
         "value_ru": "Нападение",
-        "description": "At the moment of use a Ako's sugar",
+        "description": "At the moment of use the Ako's sugar",
         "description_ru": "При использовании леденца Ако",
         "color": "#d71c17",
         "阿": {
@@ -178,6 +178,48 @@
         "攻": {
             "pronunciation": "kou",
             "value": "Attack"
+        }
+    },
+    "鬼仏見出": {
+        "hieroglyph": "鬼仏見出",
+        "pronunciation": "onibotoke midashi",
+        "value": "Sculptor's idol found",
+        "value_ru": "Найден идол резчика",
+        "description": "At the moment of finding the sculptor's idol",
+        "description_ru": "При нахождении идола резчика",
+        "color": "#feecac",
+        "鬼": {
+            "pronunciation": "oni",
+            "value": "Demon"
+        },
+        "仏": {
+            "pronunciation": "hotoke",
+            "value": "Buddha"
+        },
+        "見": {
+            "pronunciation": "mi",
+            "value": "See"
+        },
+        "出": {
+            "pronunciation": "de",
+            "value": "Out"
+        }
+    },
+    "続治": {
+        "hieroglyph": "続治",
+        "pronunciation": "zoku ji",
+        "value": "Gradual treatment",
+        "value_ru": "Постепенное лечение",
+        "description": "At the moment of use the pellet",
+        "description_ru": "При использовании драже",
+        "color": "#8be2c7",
+        "続": {
+            "pronunciation": "zoku",
+            "value": "Continued"
+        },
+        "治": {
+            "pronunciation": "osamu",
+            "value": "Treatment"
         }
     }
 }

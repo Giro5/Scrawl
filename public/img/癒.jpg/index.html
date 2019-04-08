@@ -5,30 +5,25 @@
     <title>癒.jpg (1920×1080)</title>
 </head>
 
-<body style="margin: 0px; background: #0e0e0e; display: block;">
-    <img style="-webkit-user-select: none;" src="red_癒.jpg" max-width: 100%;>
-    <img style="-webkit-user-select: none;" src="green_癒.jpg" max-width: 100%;>
-    <img style="-webkit-user-select: none;" src="purple_癒.jpg" max-width: 100%;>
+<body style="margin: 0px; background: #0e0e0e;">
+    <img style="-webkit-user-select: none; max-width: 100%;" src="red_癒.jpg">
+    <img style="-webkit-user-select: none; max-width: 100%;" src="green_癒.jpg">
+    <img style="-webkit-user-select: none; max-width: 100%;" src="purple_癒.jpg">
     <script>
         console.dir(document.images);
-        var _body = document.getElementsByTagName("body")[0];
-        var imgs = document.getElementsByTagName("img");
-        document.body.onresize = function () {
-            console.log("resize " + screen.availWidth + " " + screen.availHeight);
-            // for (var img of imgs) {
-            //     img.width = screen.availWidth;
-            //     img.height = screen.availHeight;
-            // }
-            // if (document.body.style.width != document.images[0].style.width) {
-            //     document.images[0].style.width = document.body.style.width;
-            //     document.images[1].style.width = document.body.style.width;
-
-            // }
-            // if (document.body.style.height != document.images[0].style.height) {
-            //     document.images[0].style.height = document.body.style.height;
-            //     document.images[1].style.height = document.body.style.height;
-            // }
-        }
+        // var _body = document.getElementsByTagName("body")[0];
+        // var imgs = document.getElementsByTagName("img");
+        // function resizeImg() {
+        //     console.log("resize " + _body.clientWidth + " " + _body.clientHeight);
+        //     for (var img of imgs) {
+        //         img.width = _body.clientWidth;
+        //         // img.height = _body.clientHeight;
+        //     }
+        // };
+        //resizeImg();
+        // document.body.onresize = function () {
+        //     resizeImg();
+        // };
     </script>
 </body>
 
