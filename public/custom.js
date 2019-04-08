@@ -31,8 +31,8 @@ loadJSON(function (scrawl) {
                 <div class=\"hieroglyph\">
                     <a style=\"color:${scl.color}\" href=\"img\\${i}.jpg\">${i}</a>
                 </div>
-                <div>${scl.value_ru}</div>
-                <div>${scl.description_ru}</div>
+                <div><p>${scl.value_ru}</p>
+                <p>${scl.description_ru}</p></div>
             </div>`;
         }
         else {
