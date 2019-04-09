@@ -14,15 +14,35 @@
             color: #e5e0e5;
             margin: 0;
             padding: 0;
+            /* align-items: center; */
+            /* align-content: center; */
         }
+
+        /* p {
+            margin: 10px;
+            padding: 0;
+        } */
 
         .scrawl {
             font-size: 30px;
             display: flex;
-            flex-direction: row;
+            /* flex-direction: row; */
             align-items: center;
-            justify-content: space-evenly;
+            /* justify-content: start; */
+        }
 
+        #content {
+            width: 800px;
+            margin: auto;
+            /* align-content: center; */
+            /* align-items: center; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: baseline; */
+        }
+
+        .characteristic {
+            margin: auto;
         }
 
         .hieroglyph {
@@ -32,11 +52,11 @@
             width: 100px;
         }
 
-        .logo {
+        #logo {
             font-size: 40px;
         }
 
-        .footer {
+        #footer {
             background: #f0ebf0;
             color: #252529;
             font-size: 12px;
@@ -53,13 +73,21 @@
     </style>
 
     <!-- css & js -->
-    <script src="custom.js"></script>
+    <script src="custom.js" async defer></script>
     <!-- <link rel="stylesheet" href="style_doc.css"> -->
 </head>
 
 <body>
-    <div class="logo">
+    <div id="logo">
         Japanese by Sekiro: Shadows Die Twice
+    </div>
+
+    <div id="content"></div>
+
+    <br>
+    <div id="footer">
+        Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English
+        well. With support anime-viewer.
     </div>
 
     <!-- connections to json -->
