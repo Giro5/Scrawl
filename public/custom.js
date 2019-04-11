@@ -12,7 +12,9 @@ function loadJSON(callback) {
 };
 
 var _body = document.getElementsByTagName("body")[0];
-document.getElementById("content").style.width = "800px";
+// document.getElementById("content").style.width = "800px";
+var _content = document.getElementById("content");
+// _content.style.width = "800px";
 
 loadJSON(function (scrawl) {
     console.dir(scrawl);
@@ -31,7 +33,7 @@ loadJSON(function (scrawl) {
         //console.log(i);
         var scl = scrawl[i];
 
-        document.getElementById("content").innerHTML += `<br>
+        _content.innerHTML += `<br>
             <div class=\"scrawl\">
                 <div class=\"hieroglyph\">
                     <a style=\"color:${scl.color}\" href=\"img\\${i}.jpg\">${i}</a>
@@ -54,11 +56,11 @@ loadJSON(function (scrawl) {
 function changesizecontent() {
     if (_body.clientWidth < 800) {
         // console.log("now auto");
-        document.getElementById("content").style.width = "auto";
+        _content.style.width = "auto";
     }
     else {
         // console.log("now 800");
-        document.getElementById("content").style.width = "800px";
+        _content.style.width = "800px";
     }
 };
 
