@@ -1,4 +1,7 @@
-//first method
+//global var
+var _body = document.getElementsByTagName("body")[0];
+var _content = document.getElementById("content");
+//functions
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -10,11 +13,24 @@ function loadJSON(callback) {
     };
     xobj.send(null);
 };
-
-var _body = document.getElementsByTagName("body")[0];
-// document.getElementById("content").style.width = "800px";
-var _content = document.getElementById("content");
-// _content.style.width = "800px";
+function changeSizeContent() {
+    if (_body.clientWidth < 800) {
+        // console.log("now auto");
+        _content.style.width = "auto";
+    }
+    else {
+        // console.log("now 800");
+        _content.style.width = "800px";
+    }
+};
+function changeBackground(j) {
+    console.log("next bg " + j);
+    if (j == 6) {
+        j = 0;
+    }
+    _body.style.backgroundImage = `url(/img/bg/${j}.jpg)`;
+    return ++j;
+};
 
 loadJSON(function (scrawl) {
     console.dir(scrawl);
@@ -53,25 +69,38 @@ loadJSON(function (scrawl) {
     // </div>`;
 });
 
-function changesizecontent() {
-    if (_body.clientWidth < 800) {
-        // console.log("now auto");
-        _content.style.width = "auto";
-    }
-    else {
-        // console.log("now 800");
-        _content.style.width = "800px";
-    }
+changeSizeContent();
+
+_body.onresize = function () {
+    changeSizeContent();
 };
 
-changesizecontent();
+changeBackground(0);
+var j = 1;
+setInterval(function () {
+    j = changeBackground(j);
+}, 20000);
 
-document.body.onresize = function () {
-    changesizecontent();
-};
+//methods of connection to json
+
+//first method
+// function loadJSON(callback) {
+//     var xobj = new XMLHttpRequest();
+//     xobj.overrideMimeType("application/json");
+//     xobj.open("GET", "hieroglyphs.json", true);
+//     xobj.onreadystatechange = function () {
+//         if (xobj.readyState == 4 && xobj.status == "200") {
+//             callback(JSON.parse(xobj.responseText));
+//         }
+//     };
+//     xobj.send(null);
+// };
+// loadJSON(function (myjson) {
+//     console.dir(myjson);
+// });
 
 //second method
-//< script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script >
+// < script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script >
 // $.getJSON("hieroglyphs.json", function (myjson) {
 //     console.dir(myjson);
 // });
