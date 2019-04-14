@@ -23,14 +23,6 @@ function changeSizeContent() {
         _content.style.width = "800px";
     }
 };
-function changeBackground(j) {
-    console.log("next bg " + j);
-    if (j == 6) {
-        j = 0;
-    }
-    _body.style.backgroundImage = `url(/img/bg/${j}.jpg)`;
-    return ++j;
-};
 
 loadJSON(function (scrawl) {
     console.dir(scrawl);
@@ -70,16 +62,14 @@ loadJSON(function (scrawl) {
 });
 
 changeSizeContent();
-
 _body.onresize = function () {
     changeSizeContent();
 };
 
-changeBackground(0);
-var j = 1;
 setInterval(function () {
-    j = changeBackground(j);
-}, 20000);
+    _body.style.backgroundImage = `url(/img/bg/${k == 5 ? k = 0 : ++k}.jpg)`;
+    //console.log(k);
+}, 5000, k = 0);
 
 //methods of connection to json
 
