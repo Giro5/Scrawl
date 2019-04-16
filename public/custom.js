@@ -69,7 +69,7 @@ _body.onresize = function () {
 setInterval(function () {
     _body.style.backgroundImage = `url(/img/bg/${k == 5 ? k = 0 : ++k}.jpg)`;
     //console.log(k);
-}, 5000, k = 0);
+}, 20000, k = 0);
 
 //methods of connection to json
 
