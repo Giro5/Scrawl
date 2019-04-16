@@ -1,7 +1,16 @@
 //global var
 var _body = document.getElementsByTagName("body")[0];
 var _content = document.getElementById("content");
-//functions
+var locale = "en";
+var logos = {
+    "en": "Japanese by Sekiro: Shadows Die Twice",
+    "ru": "Японский по Sekiro: Shadows Die Twice"
+}
+var footers = {
+    "en": "Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.",
+    "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, не знающим Японский и плохо знающим Английский. С поддержкой анимешника."
+}
+//global functions
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -14,62 +23,61 @@ function loadJSON(callback) {
     xobj.send(null);
 };
 function changeSizeContent() {
+    var collel = document.getElementsByClassName("scrawl");
     if (_body.clientWidth < 800) {
-        // console.log("now auto");
         _content.style.width = "auto";
+        for (var el of collel) {
+            el.setAttribute("style", "flex-direction: column;");
+            el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "");
+        }
     }
     else {
-        // console.log("now 800");
         _content.style.width = "800px";
+        for (var el of collel) {
+            el.setAttribute("style", "");
+            el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "padding-left: 15px;");
+        }
     }
 };
 
+if (window.navigator.language == "ru")
+    locale = "ru";
+
+document.getElementsByTagName("title")[0].innerText = logos[locale];
+document.getElementById("logo").innerText = logos[locale];
+document.getElementById("footer").innerText = footers[locale];
+
 loadJSON(function (scrawl) {
-    console.dir(scrawl);
-
-    var locale = "en";
-
-    if (window.navigator.language == "ru") {
-        //_body.innerHTML = "<div class=\"logo\">Японский по Sekiro: Shadows Die Twice</div>";
-        document.getElementById("logo").innerText = "Японский по Sekiro: Shadows Die Twice";
-        document.getElementsByTagName("title")[0].innerText = "Японский по Sekiro: Shadows Die Twice";
-        locale = "ru";
-    }
-
-    //for (var i = 0; i < Object.keys(scrawl).length; i++) {
     for (var i in scrawl) {
-        //console.log(i);
-        var scl = scrawl[i];
-
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
                 <div class=\"hieroglyph\">
-                    <a style=\"color:${scl.color}\" href=\"img\\${i}.jpg\">${i}</a>
+                    <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
                 </div>
                 <div class=\"characteristic\">
-                    <p>${scl.value[locale]}</p>
-                    <p>${scl.description[locale]}</p>
+                    <p>${scrawl[i].value[locale]}</p>
+                    <p>${scrawl[i].description[locale]}</p>
                 </div>
             </div>`;
     }
-
-    // _body.innerHTML += `<br>
-    // <div class=\"footer\">
-    // Copyright (c) 2019 Giro. 
-    // The site was created by a person who does not know Japanese and does not know English well. 
-    // With support anime-viewer.
-    // </div>`;
 });
 
+//defining the window resolution
 changeSizeContent();
 _body.onresize = function () {
     changeSizeContent();
 };
 
+//change bg
 setInterval(function () {
     _body.style.backgroundImage = `url(/img/bg/${k == 5 ? k = 0 : ++k}.jpg)`;
-    //console.log(k);
 }, 20000, k = 0);
+
+//loading other bg
+for (var i = 1; i < 6; i++) {
+    var img = new Image();
+    img.src = `/img/bg/${i}.jpg`;
+}
 
 //methods of connection to json
 
