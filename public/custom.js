@@ -45,7 +45,6 @@ if (window.navigator.language == "ru")
 
 document.getElementsByTagName("title")[0].innerText = logos[locale];
 document.getElementById("logo").innerText = logos[locale];
-document.getElementById("footer").innerText = footers[locale];
 
 loadJSON(function (scrawl) {
     for (var i in scrawl) {
@@ -60,10 +59,11 @@ loadJSON(function (scrawl) {
                 </div>
             </div>`;
     }
+    changeSizeContent();
+    document.getElementById("footer").innerText = footers[locale];
 });
 
 //defining the window resolution
-changeSizeContent();
 _body.onresize = function () {
     changeSizeContent();
 };

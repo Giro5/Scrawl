@@ -54,8 +54,8 @@
             "ru": "Лечение"
         },
         "description": {
-            "en": "At the moment of use the healing gourd",
-            "ru": "При испоьзовании фляги с лекарством"
+            "en": "At the moment of use the Healing Gourd",
+            "ru": "При испоьзовании Фляги С Лекарством"
         },
         "color": "#79c49b"
     },
@@ -117,8 +117,8 @@
             "ru": "Защита"
         },
         "description": {
-            "en": "At the moment of use the Ungo's sugar",
-            "ru": "При использовании леденца Унго"
+            "en": "At the moment of use the Ungo's Sugar",
+            "ru": "При использовании Леденца Унго"
         },
         "color": "#435da8",
         "吽": {
@@ -138,8 +138,8 @@
             "ru": "Яд"
         },
         "description": {
-            "en": "At the moment of poisoning",
-            "ru": "При отравлении"
+            "en": "At the moment of receipt of poison",
+            "ru": "При получении яда"
         },
         "color": "#ccff6a"
     },
@@ -182,11 +182,11 @@
         "pronunciation": "taien",
         "value": {
             "en": "Flame resistance",
-            "ru": "Защита от огня"
+            "ru": "Огнестойкость"
         },
         "description": {
-            "en": "At the moment of use the withered red gourd or after use the ministry dousing powder",
-            "ru": "При использовании иссушенной красной фляги или после использования порошка огнестойкости"
+            "en": "At the moment of use the Withered Red Gourd or after use the Ministry Dousing Powder",
+            "ru": "При использовании Иссушенной Красной Фляги или после использования Порошка Огнестойкости"
         },
         "color": "#fe9506",
         "耐": {
@@ -206,10 +206,10 @@
             "ru": "Исцеление"
         },
         "description": {
-            "en": "At the moment of use the ministry dousing powder or the antidote powder or the pacifying agent",
-            "ru": "При использовании порошка огнестойкости или порошка-противоядия или успокаивающего средства"
+            "en": "At the moment of use the Ministry Dousing Powder or the Antidote Powder or the Pacifying Agent",
+            "ru": "При использовании Порошка Огнестойкости или Порошка-Противоядия или Успокаивающего Средства"
         },
-        "color": "#e1ebe9"
+        "color": "#fff"
     },
     "阿攻": {
         "hieroglyph": "阿攻",
@@ -219,8 +219,8 @@
             "ru": "Нападение"
         },
         "description": {
-            "en": "At the moment of use the Ako's sugar",
-            "ru": "При использовании леденца Ако"
+            "en": "At the moment of use the Ako's Sugar",
+            "ru": "При использовании Леденца Ако"
         },
         "color": "#d71c17",
         "阿": {
@@ -269,8 +269,8 @@
             "ru": "Постепенное лечение"
         },
         "description": {
-            "en": "At the moment of use the pellet",
-            "ru": "При использовании драже"
+            "en": "At the moment of use the Pellet",
+            "ru": "При использовании Драже"
         },
         "color": "#8be2c7",
         "続": {
@@ -280,6 +280,132 @@
         "治": {
             "pronunciation": "osamu",
             "value": "Treatment"
+        }
+    },
+    "忍殺": {
+        "hieroglyph": "忍殺",
+        "pronunciation": "shinobu satsu",
+        "value": {
+            "en": "Shinobi execution",
+            "ru": "Казнь синоби"
+        },
+        "description": {
+            "en": "At the moment of killing of the powerful enemy",
+            "ru": "При убийстве могущественного врага"
+        },
+        "color": "#fff",
+        "忍": {
+            "pronunciation": "shinobu",
+            "value": "Shinobi"
+        },
+        "殺": {
+            "pronunciation": "satsu",
+            "value": "Kill"
+        }
+    },
+    "中毒": {
+        "hieroglyph": "中毒",
+        "pronunciation": "chuudoku",
+        "value": {
+            "en": "Poisoning",
+            "ru": "Отравление"
+        },
+        "description": {
+            "en": "At the moment of poisoning",
+            "ru": "При отравлении"
+        },
+        "color": "#b9d250",
+        "中": {
+            "pronunciation": "naka",
+            "value": "During"
+        },
+        "毒": {
+            "pronunciation": "docu",
+            "value": "Poison"
+        }
+    },
+    "耐毒": {
+        "hieroglyph": "耐毒",
+        "pronunciation": "tai docu",
+        "value": {
+            "en": "Poison resistance",
+            "ru": "Устойчивоть к яду"
+        },
+        "description": {
+            "en": "At the moment of use the Green Mousy Gourd or after use the Antidote Powder",
+            "ru": "При использовании Зеленой Мшистой Фляги или после использования Порошка-Противоядия"
+        },
+        "color": "#e2ea7d",
+        "耐": {
+            "pronunciation": "tai",
+            "value": "Resistance"
+        },
+        "毒": {
+            "pronunciation": "docu",
+            "value": "Poison"
+        }
+    },
+    "可隠": {
+        "hieroglyph": "可隠",
+        "pronunciation": "ka in",
+        "value": {
+            "en": "Hidden",
+            "ru": "Скрытый"
+        },
+        "description": {
+            "en": "At the moment of use the Gachiin's Sugar",
+            "ru": "При использовании Леденца Гатиина"
+        },
+        "color": "#78abbc",
+        "可": {
+            "pronunciation": "ka",
+            "value": "Allowed"
+        },
+        "隠": {
+            "pronunciation": "in",
+            "value": "Hidden"
+        }
+    },
+    "剛幹": {
+        "hieroglyph": "剛幹",
+        "pronunciation": "tsuyoki",
+        "value": {
+            "en": "Reinforced posture",
+            "ru": "Усиленная стойка"
+        },
+        "description": {
+            "en": "At the moment of use the Gokan's Sugar",
+            "ru": "При использовании Леденца Гокана"
+        },
+        "color": "#fcfa99",
+        "剛": {
+            "pronunciation": "gou",
+            "value": "Rigidity"
+        },
+        "幹": {
+            "pronunciation": "miki",
+            "value": "Stem"
+        }
+    },
+    "続幹": {
+        "hieroglyph": "続幹",
+        "pronunciation": "zoku miki",
+        "value": {
+            "en": "Gradual recovery posture",
+            "ru": "Постепеннове восстановление равновесия"
+        },
+        "description": {
+            "en": "At the moment of use the Sweet Rice Ball or the Persimmon",
+            "ru": "При использовании Сладкого Рисового Шарика или Хурмы"
+        },
+        "color": "#fcfa99",
+        "続": {
+            "pronunciation": "zoku",
+            "value": "Continued"
+        },
+        "幹": {
+            "pronunciation": "miki",
+            "value": "Stem"
         }
     }
 }
