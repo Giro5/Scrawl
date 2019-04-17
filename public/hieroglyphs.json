@@ -2,6 +2,7 @@
     "隻狼": {
         "hieroglyph": "隻狼",
         "pronunciation": "sekiro",
+        "type": "other",
         "value": {
             "en": "One-armed wolf",
             "ru": "Однорукий волк"
@@ -23,6 +24,7 @@
     "死": {
         "hieroglyph": "死",
         "pronunciation": "shi",
+        "type": "other",
         "value": {
             "en": "Death",
             "ru": "Смерть"
@@ -36,6 +38,7 @@
     "危": {
         "hieroglyph": "危",
         "pronunciation": "ki",
+        "type": "other",
         "value": {
             "en": "Danger",
             "ru": "Берегись"
@@ -49,19 +52,21 @@
     "治": {
         "hieroglyph": "治",
         "pronunciation": "osamu",
+        "type": "item",
         "value": {
             "en": "Treatment",
             "ru": "Лечение"
         },
         "description": {
             "en": "At the moment of use the Healing Gourd",
-            "ru": "При испоьзовании Фляги С Лекарством"
+            "ru": "При испоьзовании Фляги c Лекарством"
         },
         "color": "#79c49b"
     },
     "回生": {
         "hieroglyph": "回生",
         "pronunciation": "kaisei",
+        "type": "other",
         "value": {
             "en": "Resurrection",
             "ru": "Воскрешение"
@@ -83,6 +88,7 @@
     "冥助あリ": {
         "hieroglyph": "冥助あリ",
         "pronunciation": "mei suke a ri",
+        "type": "other",
         "value": {
             "en": "Unseen aid",
             "ru": "Невидимая помощь"
@@ -112,6 +118,7 @@
     "吽護": {
         "hieroglyph": "吽護",
         "pronunciation": "un mamoru",
+        "type": "item",
         "value": {
             "en": "Protection",
             "ru": "Защита"
@@ -133,6 +140,7 @@
     "毒": {
         "hieroglyph": "毒",
         "pronunciation": "docu",
+        "type": "buff",
         "value": {
             "en": "Poison",
             "ru": "Яд"
@@ -146,6 +154,7 @@
     "炎": {
         "hieroglyph": "炎",
         "pronunciation": "honō",
+        "type": "buff",
         "value": {
             "en": "Flame",
             "ru": "Пламя"
@@ -159,6 +168,7 @@
     "炎よ": {
         "hieroglyph": "炎よ",
         "pronunciation": "honō yo",
+        "type": "buff",
         "value": {
             "en": "Burn",
             "ru": "Поджег"
@@ -180,6 +190,7 @@
     "耐炎": {
         "hieroglyph": "耐炎",
         "pronunciation": "taien",
+        "type": "item",
         "value": {
             "en": "Flame resistance",
             "ru": "Огнестойкость"
@@ -201,6 +212,7 @@
     "癒": {
         "hieroglyph": "癒",
         "pronunciation": "yu",
+        "type": "item",
         "value": {
             "en": "Cure",
             "ru": "Исцеление"
@@ -214,6 +226,7 @@
     "阿攻": {
         "hieroglyph": "阿攻",
         "pronunciation": "a kou",
+        "type": "item",
         "value": {
             "en": "Assault",
             "ru": "Нападение"
@@ -235,6 +248,7 @@
     "鬼仏見出": {
         "hieroglyph": "鬼仏見出",
         "pronunciation": "onibotoke midashi",
+        "type": "other",
         "value": {
             "en": "Sculptor's idol found",
             "ru": "Найден идол резчика"
@@ -264,6 +278,7 @@
     "続治": {
         "hieroglyph": "続治",
         "pronunciation": "zoku ji",
+        "type": "item",
         "value": {
             "en": "Gradual treatment",
             "ru": "Постепенное лечение"
@@ -285,6 +300,7 @@
     "忍殺": {
         "hieroglyph": "忍殺",
         "pronunciation": "shinobu satsu",
+        "type": "other",
         "value": {
             "en": "Shinobi execution",
             "ru": "Казнь синоби"
@@ -306,6 +322,7 @@
     "中毒": {
         "hieroglyph": "中毒",
         "pronunciation": "chuudoku",
+        "type": "buff",
         "value": {
             "en": "Poisoning",
             "ru": "Отравление"
@@ -327,6 +344,7 @@
     "耐毒": {
         "hieroglyph": "耐毒",
         "pronunciation": "tai docu",
+        "type": "item",
         "value": {
             "en": "Poison resistance",
             "ru": "Устойчивоть к яду"
@@ -348,6 +366,7 @@
     "可隠": {
         "hieroglyph": "可隠",
         "pronunciation": "ka in",
+        "type": "item",
         "value": {
             "en": "Hidden",
             "ru": "Скрытый"
@@ -369,6 +388,7 @@
     "剛幹": {
         "hieroglyph": "剛幹",
         "pronunciation": "tsuyoki",
+        "type": "item",
         "value": {
             "en": "Reinforced posture",
             "ru": "Усиленная стойка"
@@ -390,6 +410,7 @@
     "続幹": {
         "hieroglyph": "続幹",
         "pronunciation": "zoku miki",
+        "type": "item",
         "value": {
             "en": "Gradual recovery posture",
             "ru": "Постепеннове восстановление равновесия"

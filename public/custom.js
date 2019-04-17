@@ -10,6 +10,10 @@ var footers = {
     "en": "Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.",
     "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, не знающим Японский и плохо знающим Английский. С поддержкой анимешника."
 }
+var filters = {
+    "en": ["Items", "Buffs", "Other"],
+    "ru": ["Предметы", "Статусы", "Другое"]
+}
 //global functions
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
@@ -40,13 +44,18 @@ function changeSizeContent() {
     }
 };
 
-if (window.navigator.language == "ru")
+if (window.navigator.language == "ru") {
     locale = "ru";
+    for (var i = 0; i < 3; i++)
+        document.getElementsByClassName("filter")[i].innerText = filters.ru[i];
+}
 
 document.getElementsByTagName("title")[0].innerText = logos[locale];
 document.getElementById("logo").innerText = logos[locale];
 
 loadJSON(function (scrawl) {
+    console.dir(scrawl);
+    console.log(Object.keys(scrawl).length);
     for (var i in scrawl) {
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
@@ -77,6 +86,42 @@ setInterval(function () {
 for (var i = 1; i < 6; i++) {
     var img = new Image();
     img.src = `/img/bg/${i}.jpg`;
+}
+
+for (var i = 0; i < 3; i++) {
+    document.getElementsByClassName("filter")[i].onclick = function () {
+        if (this.style.textDecorationLine == "")
+            this.style.textDecorationLine = "line-through";
+        else
+            this.style.textDecorationLine = "";
+        loadJSON(function (scrawl) {
+            _content.innerHTML = "";
+            for (var i in scrawl) {
+                if (document.getElementsByClassName("filter")[0].style.textDecorationLine == "line-through"
+                    && scrawl[i].type == "item") {
+                    continue;
+                }
+                if (document.getElementsByClassName("filter")[1].style.textDecorationLine == "line-through"
+                    && scrawl[i].type == "buff") {
+                    continue;
+                }
+                if (document.getElementsByClassName("filter")[2].style.textDecorationLine == "line-through"
+                    && scrawl[i].type == "other") {
+                    continue;
+                }
+                _content.innerHTML += `<br>
+                <div class=\"scrawl\">
+                    <div class=\"hieroglyph\">
+                        <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
+                    </div>
+                    <div class=\"characteristic\">
+                        <p>${scrawl[i].value[locale]}</p>
+                        <p>${scrawl[i].description[locale]}</p>
+                    </div>
+                </div>`;
+            }
+        });
+    };
 }
 
 //methods of connection to json

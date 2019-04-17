@@ -92,6 +92,40 @@
             text-decoration: none;
             color: #e5e0e5;
         }
+
+        #filters {
+            font-size: 20px;
+            margin: auto;
+            height: 30px;
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            box-shadow: #252529 0 0 20px;
+            background-color: #252529a4;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .filter {
+            /* width: 40px; */
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-between; */
+            cursor: pointer;
+            /* text-decoration-line: line-through; */
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .filter:hover {
+            color: #b8b5b8;
+        }
+
+        /* .filter:active {
+            border: gold solid 1px;
+        } */
     </style>
 
     <!-- css & js -->
@@ -101,6 +135,11 @@
 
 <body>
     <div id="logo"></div>
+    <div id="filters">
+        <div class="filter">Items</div>
+        <div class="filter">Buffs</div>
+        <div class="filter">Other</div>
+    </div>
 
     <div id="content"></div>
 
