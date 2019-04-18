@@ -5,15 +5,19 @@ var locale = "en";
 var logos = {
     "en": "Japanese by Sekiro: Shadows Die Twice",
     "ru": "Японский по Sekiro: Shadows Die Twice"
-}
+};
 var footers = {
     "en": "Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.",
     "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, не знающим Японский и плохо знающим Английский. С поддержкой анимешника."
-}
+};
 var filters = {
     "en": ["Items", "Status", "Other"],
     "ru": ["Предметы", "Статусы", "Другое"]
-}
+};
+var zero_scrawls = {
+    "en": "Nothing",
+    "ru": "Ничего"
+};
 //global functions
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
@@ -60,19 +64,25 @@ function Scrawl_one(scrawl) {
             continue;
         }
         _content.innerHTML += `<br>
-                <div class=\"scrawl\">
-                    <div class=\"hieroglyph\">
-                        <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
-                    </div>
-                    <div class=\"characteristic\">
-                        <p>${scrawl[i].value[locale]}</p>
-                        <p>${scrawl[i].description[locale]}</p>
-                    </div>
-                </div>`;
+            <div class=\"scrawl\">
+                <div class=\"hieroglyph\">
+                    <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
+                </div>
+                <div class=\"characteristic\">
+                    <p>${scrawl[i].value[locale]}</p>
+                    <p>${scrawl[i].description[locale]}</p>
+                </div>
+            </div>`;
     }
     console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
-        _content.innerHTML += "<br><div class=\"scrawl\"><div class=\"characteristic\"><p>No Way</p><p>^_^</p></div></div>";
+        _content.innerHTML += `<br>
+            <div class=\"scrawl\">
+                <div class=\"characteristic\">
+                    <p>${zero_scrawls[locale]}</p>
+                    <p>^_^</p>
+                </div>
+            </div>`;
     }
 };
 
