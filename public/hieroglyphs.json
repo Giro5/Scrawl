@@ -124,8 +124,8 @@
             "ru": "Защита"
         },
         "description": {
-            "en": "At the moment of use the Ungo's Sugar",
-            "ru": "При использовании Леденца Унго"
+            "en": "At the moment of use the Ungo's Sugar or the Ungo's Spiritfall",
+            "ru": "При использовании Леденца Унго или Благословение Унго"
         },
         "color": "#435da8",
         "吽": {
@@ -140,7 +140,7 @@
     "毒": {
         "hieroglyph": "毒",
         "pronunciation": "docu",
-        "type": "buff",
+        "type": "status",
         "value": {
             "en": "Poison",
             "ru": "Яд"
@@ -154,7 +154,7 @@
     "炎": {
         "hieroglyph": "炎",
         "pronunciation": "honō",
-        "type": "buff",
+        "type": "status",
         "value": {
             "en": "Flame",
             "ru": "Пламя"
@@ -168,7 +168,7 @@
     "炎よ": {
         "hieroglyph": "炎よ",
         "pronunciation": "honō yo",
-        "type": "buff",
+        "type": "status",
         "value": {
             "en": "Burn",
             "ru": "Поджег"
@@ -232,8 +232,8 @@
             "ru": "Нападение"
         },
         "description": {
-            "en": "At the moment of use the Ako's Sugar",
-            "ru": "При использовании Леденца Ако"
+            "en": "At the moment of use the Ako's Sugar or the Ako's Spiritfall",
+            "ru": "При использовании Леденца Ако или Благословение Ако"
         },
         "color": "#d71c17",
         "阿": {
@@ -322,7 +322,7 @@
     "中毒": {
         "hieroglyph": "中毒",
         "pronunciation": "chuudoku",
-        "type": "buff",
+        "type": "status",
         "value": {
             "en": "Poisoning",
             "ru": "Отравление"
@@ -372,8 +372,8 @@
             "ru": "Скрытый"
         },
         "description": {
-            "en": "At the moment of use the Gachiin's Sugar",
-            "ru": "При использовании Леденца Гатиина"
+            "en": "At the moment of use the Gachiin's Sugar or the Gachiin's Spiritfall",
+            "ru": "При использовании Леденца Гатиина или Благословение Гатиина"
         },
         "color": "#78abbc",
         "可": {
@@ -394,8 +394,8 @@
             "ru": "Усиленная стойка"
         },
         "description": {
-            "en": "At the moment of use the Gokan's Sugar",
-            "ru": "При использовании Леденца Гокана"
+            "en": "At the moment of use the Gokan's Sugar or the Gokan's Spiritfall",
+            "ru": "При использовании Леденца Гокана или Благословение Гокана"
         },
         "color": "#fcfa99",
         "剛": {

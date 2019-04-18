@@ -11,7 +11,7 @@ var footers = {
     "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, не знающим Японский и плохо знающим Английский. С поддержкой анимешника."
 }
 var filters = {
-    "en": ["Items", "Buffs", "Other"],
+    "en": ["Items", "Status", "Other"],
     "ru": ["Предметы", "Статусы", "Другое"]
 }
 //global functions
@@ -32,15 +32,47 @@ function changeSizeContent() {
         _content.style.width = "auto";
         for (var el of collel) {
             el.setAttribute("style", "flex-direction: column;");
-            el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "");
+            // el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "");
         }
     }
     else {
         _content.style.width = "800px";
         for (var el of collel) {
             el.setAttribute("style", "");
-            el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "padding-left: 15px;");
+            // el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "padding-left: 15px;");
         }
+    }
+};
+function Scrawl_one(scrawl) {
+    //console.log(Object.keys(scrawl).length);
+    _content.innerHTML = "";
+    for (var i in scrawl) {
+        if (document.getElementsByClassName("filter")[0].style.textDecorationLine == "line-through"
+            && scrawl[i].type == "item") {
+            continue;
+        }
+        if (document.getElementsByClassName("filter")[1].style.textDecorationLine == "line-through"
+            && scrawl[i].type == "status") {
+            continue;
+        }
+        if (document.getElementsByClassName("filter")[2].style.textDecorationLine == "line-through"
+            && scrawl[i].type == "other") {
+            continue;
+        }
+        _content.innerHTML += `<br>
+                <div class=\"scrawl\">
+                    <div class=\"hieroglyph\">
+                        <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
+                    </div>
+                    <div class=\"characteristic\">
+                        <p>${scrawl[i].value[locale]}</p>
+                        <p>${scrawl[i].description[locale]}</p>
+                    </div>
+                </div>`;
+    }
+    console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
+    if (_content.getElementsByClassName("scrawl").length == 0) {
+        _content.innerHTML += "<br><div class=\"scrawl\"><div class=\"characteristic\"><p>No Way</p><p>^_^</p></div></div>";
     }
 };
 
@@ -52,24 +84,12 @@ if (window.navigator.language == "ru") {
 
 document.getElementsByTagName("title")[0].innerText = logos[locale];
 document.getElementById("logo").innerText = logos[locale];
+document.getElementById("footer").innerText = footers[locale];
 
 loadJSON(function (scrawl) {
     console.dir(scrawl);
-    console.log(Object.keys(scrawl).length);
-    for (var i in scrawl) {
-        _content.innerHTML += `<br>
-            <div class=\"scrawl\">
-                <div class=\"hieroglyph\">
-                    <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
-                </div>
-                <div class=\"characteristic\">
-                    <p>${scrawl[i].value[locale]}</p>
-                    <p>${scrawl[i].description[locale]}</p>
-                </div>
-            </div>`;
-    }
+    Scrawl_one(scrawl);
     changeSizeContent();
-    document.getElementById("footer").innerText = footers[locale];
 });
 
 //defining the window resolution
@@ -95,31 +115,7 @@ for (var i = 0; i < 3; i++) {
         else
             this.style.textDecorationLine = "";
         loadJSON(function (scrawl) {
-            _content.innerHTML = "";
-            for (var i in scrawl) {
-                if (document.getElementsByClassName("filter")[0].style.textDecorationLine == "line-through"
-                    && scrawl[i].type == "item") {
-                    continue;
-                }
-                if (document.getElementsByClassName("filter")[1].style.textDecorationLine == "line-through"
-                    && scrawl[i].type == "buff") {
-                    continue;
-                }
-                if (document.getElementsByClassName("filter")[2].style.textDecorationLine == "line-through"
-                    && scrawl[i].type == "other") {
-                    continue;
-                }
-                _content.innerHTML += `<br>
-                <div class=\"scrawl\">
-                    <div class=\"hieroglyph\">
-                        <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
-                    </div>
-                    <div class=\"characteristic\">
-                        <p>${scrawl[i].value[locale]}</p>
-                        <p>${scrawl[i].description[locale]}</p>
-                    </div>
-                </div>`;
-            }
+            Scrawl_one(scrawl);
         });
     };
 }
