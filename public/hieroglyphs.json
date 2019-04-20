@@ -432,5 +432,77 @@
             "pronunciation": "miki",
             "value": "Stem"
         }
+    },
+    "怖": {
+        "hieroglyph": "怖",
+        "pronunciation": "kowa",
+        "type": "status",
+        "value": {
+            "en": "Fear",
+            "ru": "Испуг"
+        },
+        "description": {
+            "en": "At the moment of fear",
+            "ru": "При испуге"
+        },
+        "color": "#8482d6"
+    },
+    "耐怖": {
+        "hieroglyph": "耐怖",
+        "pronunciation": "tai kowa",
+        "type": "item",
+        "value": {
+            "en": "Terror resistance",
+            "ru": "Устойчивоть к страху"
+        },
+        "description": {
+            "en": "At the moment of use the Mottled Purple Gourd or after use the Pacifying Agent",
+            "ru": "При использовании Пёстрой Пурпурной Фляги или после использования Успокаивающего Средства"
+        },
+        "color": "#a262d0",
+        "耐": {
+            "pronunciation": "tai",
+            "value": "Resistance"
+        },
+        "怖": {
+            "pronunciation": "kowa",
+            "value": "Fear"
+        }
+    },
+    "怖気": {
+        "hieroglyph": "怖気",
+        "pronunciation": "ozoke",
+        "type": "status",
+        "value": {
+            "en": "Terror",
+            "ru": "Страх"
+        },
+        "description": {
+            "en": "At the moment of terror",
+            "ru": "При страхе"
+        },
+        "color": "#615aaa",
+        "怖": {
+            "pronunciation": "kowa",
+            "value": "Fear"
+        },
+        "気": {
+            "pronunciation": "ki",
+            "value": "The"
+        }
+    },
+    "傀": {
+        "hieroglyph": "傀",
+        "pronunciation": "kai",
+        "type": "other",
+        "value": {
+            "en": "Puppet",
+            "ru": "Марионетка"
+        },
+        "description": {
+            "en": "At the moment of use the Puppeteer Ninjutsu",
+            "ru": "При использовании ниндзюцу Техники Кукловода"
+        },
+        "color": "#928ed8"
     }
 }
