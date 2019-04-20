@@ -125,7 +125,7 @@
         },
         "description": {
             "en": "At the moment of use the Ungo's Sugar or the Ungo's Spiritfall",
-            "ru": "При использовании Леденца Унго или Благословение Унго"
+            "ru": "При использовании Леденца Унго или Благословения Унго"
         },
         "color": "#435da8",
         "吽": {
@@ -221,7 +221,11 @@
             "en": "At the moment of use the Ministry Dousing Powder or the Antidote Powder or the Pacifying Agent",
             "ru": "При использовании Порошка Огнестойкости или Порошка-Противоядия или Успокаивающего Средства"
         },
-        "color": "#fff"
+        "color": [
+            "#fe6f06",
+            "#c8f27c",
+            "#ad27d7"
+        ]
     },
     "阿攻": {
         "hieroglyph": "阿攻",
@@ -233,7 +237,7 @@
         },
         "description": {
             "en": "At the moment of use the Ako's Sugar or the Ako's Spiritfall",
-            "ru": "При использовании Леденца Ако или Благословение Ако"
+            "ru": "При использовании Леденца Ако или Благословения Ако"
         },
         "color": "#d71c17",
         "阿": {
@@ -368,12 +372,12 @@
         "pronunciation": "ka in",
         "type": "item",
         "value": {
-            "en": "Hidden",
-            "ru": "Скрытый"
+            "en": "Stealth",
+            "ru": "Скрытность"
         },
         "description": {
             "en": "At the moment of use the Gachiin's Sugar or the Gachiin's Spiritfall",
-            "ru": "При использовании Леденца Гатиина или Благословение Гатиина"
+            "ru": "При использовании Леденца Гатиина или Благословения Гатиина"
         },
         "color": "#78abbc",
         "可": {
@@ -391,11 +395,11 @@
         "type": "item",
         "value": {
             "en": "Reinforced posture",
-            "ru": "Усиленная стойка"
+            "ru": "Усиленное равновесие"
         },
         "description": {
             "en": "At the moment of use the Gokan's Sugar or the Gokan's Spiritfall",
-            "ru": "При использовании Леденца Гокана или Благословение Гокана"
+            "ru": "При использовании Леденца Гокана или Благословения Гокана"
         },
         "color": "#fcfa99",
         "剛": {
@@ -413,7 +417,7 @@
         "type": "item",
         "value": {
             "en": "Gradual recovery posture",
-            "ru": "Постепеннове восстановление равновесия"
+            "ru": "Постепенное восстановление равновесия"
         },
         "description": {
             "en": "At the moment of use the Sweet Rice Ball or the Persimmon",

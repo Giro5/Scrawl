@@ -36,14 +36,12 @@ function changeSizeContent() {
         _content.style.width = "auto";
         for (var el of collel) {
             el.setAttribute("style", "flex-direction: column;");
-            // el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "");
         }
     }
     else {
         _content.style.width = "800px";
         for (var el of collel) {
             el.setAttribute("style", "");
-            // el.getElementsByClassName("hieroglyph")[0].setAttribute("style", "padding-left: 15px;");
         }
     }
 };
@@ -63,10 +61,12 @@ function Scrawl_one(scrawl) {
             && scrawl[i].type == "other") {
             continue;
         }
+        var styleText = typeof (scrawl[i].color) == "string" ? `color:${scrawl[i].color}` :
+            `background:linear-gradient(45deg,${scrawl[i].color.join(",")});-webkit-background-clip:text;-webkit-text-fill-color:transparent;`;
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
                 <div class=\"hieroglyph\">
-                    <a style=\"color:${scrawl[i].color}\" href=\"img\\${i}.jpg\">${i}</a>
+                    <a style=\"${styleText}\" href=\"img\\${i}.jpg\">${i}</a>
                 </div>
                 <div class=\"characteristic\">
                     <p>${scrawl[i].value[locale]}</p>
@@ -74,10 +74,11 @@ function Scrawl_one(scrawl) {
                 </div>
             </div>`;
     }
-    console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
+    //console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
+                <div class=\"hieroglyph\">何も</div>
                 <div class=\"characteristic\">
                     <p>${zero_scrawls[locale]}</p>
                     <p>^_^</p>
@@ -91,7 +92,7 @@ if (window.navigator.language == "ru") {
     for (var i = 0; i < 3; i++)
         document.getElementsByClassName("filter")[i].innerText = filters.ru[i];
 }
-
+document.getElementsByTagName("html")[0].setAttribute("lang", locale);
 document.getElementsByTagName("title")[0].innerText = logos[locale];
 document.getElementById("logo").innerText = logos[locale];
 document.getElementById("footer").innerText = footers[locale];
@@ -126,6 +127,7 @@ for (var i = 0; i < 3; i++) {
             this.style.textDecorationLine = "";
         loadJSON(function (scrawl) {
             Scrawl_one(scrawl);
+            changeSizeContent();
         });
     };
 }
