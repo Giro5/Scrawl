@@ -504,5 +504,49 @@
             "ru": "При использовании ниндзюцу Техники Кукловода"
         },
         "color": "#928ed8"
+    },
+    "厄憑": {
+        "hieroglyph": "厄憑",
+        "pronunciation": "yaku tsu",
+        "type": "other",
+        "value": {
+            "en": "Sinister burden",
+            "ru": "Зловещая ноша"
+        },
+        "description": {
+            "en": "At the moment of ringing on the Demon's bell",
+            "ru": "При звонке в Демонический колокол"
+        },
+        "color": "#71001f",
+        "厄": {
+            "pronunciation": "yaku",
+            "value": "Disaster"
+        },
+        "憑": {
+            "pronunciation": "tsu",
+            "value": "Possessed"
+        }
+    },
+    "厄払": {
+        "hieroglyph": "厄払",
+        "pronunciation": "yaku harai",
+        "type": "item",
+        "value": {
+            "en": "Burden dispelled",
+            "ru": "Ноши больше нет"
+        },
+        "description": {
+            "en": "At the moment of use the Bell Demon",
+            "ru": "При использовании Демона Колокола"
+        },
+        "color": "#fff",
+        "厄": {
+            "pronunciation": "yaku",
+            "value": "Disaster"
+        },
+        "払": {
+            "pronunciation": "harai",
+            "value": "Payment"
+        }
     }
 }
