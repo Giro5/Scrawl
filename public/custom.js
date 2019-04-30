@@ -61,8 +61,9 @@ function Scrawl_one(scrawl) {
             && scrawl[i].type == "other") {
             continue;
         }
-        var styleText = typeof (scrawl[i].color) == "string" ? `color:${scrawl[i].color}` :
-            `background:linear-gradient(45deg,${scrawl[i].color.join(",")});-webkit-background-clip:text;-webkit-text-fill-color:transparent;`;
+        var styleText = typeof (scrawl[i].color) == "string" ? `color:${scrawl[i].color};` :
+            `background:linear-gradient(45deg,${scrawl[i].color.join(",")});
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;`;
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
                 <div class=\"hieroglyph\">

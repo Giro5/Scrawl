@@ -548,5 +548,41 @@
             "pronunciation": "harai",
             "value": "Payment"
         }
+    },
+    "年": {
+        "hieroglyph": "年",
+        "pronunciation": "toshi",
+        "type": "status",
+        "value": {
+            "en": "Enfeeble",
+            "ru": "Ослабление"
+        },
+        "description": {
+            "en": "At the moment of enfeeblement",
+            "ru": "При ослабевании"
+        },
+        "color": "#f0f0ff"
+    },
+    "年寄": {
+        "hieroglyph": "年寄",
+        "pronunciation": "toshiyori",
+        "type": "status",
+        "value": {
+            "en": "Enfeebled",
+            "ru": "Ослабленный"
+        },
+        "description": {
+            "en": "At the moment of enfeebled",
+            "ru": "При ослаблении"
+        },
+        "color": "#f4f0ed",
+        "年": {
+            "pronunciation": "toshi",
+            "value": "Enfeeble"
+        },
+        "寄": {
+            "pronunciation": "yori",
+            "value": "Close"
+        }
     }
 }
