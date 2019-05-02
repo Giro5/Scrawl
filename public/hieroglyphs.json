@@ -1,7 +1,5 @@
 ﻿{
     "隻狼": {
-        "hieroglyph": "隻狼",
-        "pronunciation": "sekiro",
         "type": "other",
         "value": {
             "en": "One-armed wolf",
@@ -11,19 +9,9 @@
             "en": "Character moniker and game title",
             "ru": "Кличка персонажа и название игры"
         },
-        "color": "#e1ebe9",
-        "隻": {
-            "pronunciation": "seki",
-            "value": "One-armed"
-        },
-        "狼": {
-            "pronunciation": "okami",
-            "value": "Wolf"
-        }
+        "color": "#e1ebe9"
     },
     "死": {
-        "hieroglyph": "死",
-        "pronunciation": "shi",
         "type": "other",
         "value": {
             "en": "Death",
@@ -36,8 +24,6 @@
         "color": "#c32d2e"
     },
     "危": {
-        "hieroglyph": "危",
-        "pronunciation": "ki",
         "type": "other",
         "value": {
             "en": "Danger",
@@ -50,22 +36,18 @@
         "color": "#e33d45"
     },
     "治": {
-        "hieroglyph": "治",
-        "pronunciation": "osamu",
         "type": "item",
         "value": {
             "en": "Treatment",
             "ru": "Лечение"
         },
         "description": {
-            "en": "At the moment of use the Healing Gourd",
-            "ru": "При испоьзовании Фляги c Лекарством"
+            "en": "At the moment of use the Healing Gourd or the Divine Grass",
+            "ru": "При испоьзовании Фляги c Лекарством или Божественной Травы"
         },
         "color": "#79c49b"
     },
     "回生": {
-        "hieroglyph": "回生",
-        "pronunciation": "kaisei",
         "type": "other",
         "value": {
             "en": "Resurrection",
@@ -75,19 +57,9 @@
             "en": "At the moment of resurrection",
             "ru": "При возрождении"
         },
-        "color": "#d55f5f",
-        "回": {
-            "pronunciation": "kai",
-            "value": "Times"
-        },
-        "生": {
-            "pronunciation": "nama",
-            "value": "Birth"
-        }
+        "color": "#d55f5f"
     },
     "冥助あリ": {
-        "hieroglyph": "冥助あリ",
-        "pronunciation": "mei suke a ri",
         "type": "other",
         "value": {
             "en": "Unseen aid",
@@ -97,27 +69,9 @@
             "en": "At the moment of activation of the unseen aid",
             "ru": "При срабатывании невидимой помощи"
         },
-        "color": "#8ea8d3",
-        "冥": {
-            "pronunciation": "mei",
-            "value": "Moth"
-        },
-        "助": {
-            "pronunciation": "suke",
-            "value": "Assistant"
-        },
-        "あ": {
-            "pronunciation": "a",
-            "value": "Ah"
-        },
-        "リ": {
-            "pronunciation": "ri",
-            "value": "The"
-        }
+        "color": "#8ea8d3"
     },
     "吽護": {
-        "hieroglyph": "吽護",
-        "pronunciation": "un mamoru",
         "type": "item",
         "value": {
             "en": "Protection",
@@ -127,19 +81,9 @@
             "en": "At the moment of use the Ungo's Sugar or the Ungo's Spiritfall",
             "ru": "При использовании Леденца Унго или Благословения Унго"
         },
-        "color": "#435da8",
-        "吽": {
-            "pronunciation": "un",
-            "value": "Moth"
-        },
-        "護": {
-            "pronunciation": "mamoru",
-            "value": "Protection"
-        }
+        "color": "#435da8"
     },
     "毒": {
-        "hieroglyph": "毒",
-        "pronunciation": "docu",
         "type": "status",
         "value": {
             "en": "Poison",
@@ -152,8 +96,6 @@
         "color": "#ccff6a"
     },
     "炎": {
-        "hieroglyph": "炎",
-        "pronunciation": "honō",
         "type": "status",
         "value": {
             "en": "Flame",
@@ -166,8 +108,6 @@
         "color": "#fa8132"
     },
     "炎よ": {
-        "hieroglyph": "炎よ",
-        "pronunciation": "honō yo",
         "type": "status",
         "value": {
             "en": "Burn",
@@ -177,49 +117,29 @@
             "en": "At the moment of burning",
             "ru": "При горении"
         },
-        "color": "#e78441",
-        "炎": {
-            "pronunciation": "honō",
-            "value": "Flame"
-        },
-        "よ": {
-            "pronunciation": "yo",
-            "value": "The"
-        }
+        "color": "#e78441"
     },
     "耐炎": {
-        "hieroglyph": "耐炎",
-        "pronunciation": "taien",
         "type": "item",
         "value": {
             "en": "Flame resistance",
             "ru": "Огнестойкость"
         },
         "description": {
-            "en": "At the moment of use the Withered Red Gourd or after use the Dousing Powder",
-            "ru": "При использовании Иссушенной Красной Фляги или после использования Порошка Огнестойкости"
+            "en": "At the moment of use the Withered Red Gourd and after use the Dousing Powder or the Ministry Dousing Powder",
+            "ru": "При использовании Иссушенной Красной Фляги и после использования Порошка Огнестойкости или Порошка Министерства"
         },
-        "color": "#fe9506",
-        "耐": {
-            "pronunciation": "tai",
-            "value": "Resistance"
-        },
-        "炎": {
-            "pronunciation": "honō",
-            "value": "Flame"
-        }
+        "color": "#fe9506"
     },
     "癒": {
-        "hieroglyph": "癒",
-        "pronunciation": "yu",
         "type": "item",
         "value": {
             "en": "Cure",
             "ru": "Исцеление"
         },
         "description": {
-            "en": "At the moment of use the Dousing Powder or the Antidote Powder or the Pacifying Agent or the Divine Grass",
-            "ru": "При использовании Порошка Огнестойкости или Порошка-Противоядия или Успокаивающего Средства или Божественной Травы"
+            "en": "At the moment of use the Dousing Powder or the Antidote Powder or the Pacifying Agent or the Divine Grass or the Ministry Dousing Powder",
+            "ru": "При использовании Порошка Огнестойкости или Порошка-Противоядия или Успокаивающего Средства или Божественной Травы или Порошка Министерства"
         },
         "color": [
             "45deg",
@@ -229,8 +149,6 @@
         ]
     },
     "阿攻": {
-        "hieroglyph": "阿攻",
-        "pronunciation": "a kou",
         "type": "item",
         "value": {
             "en": "Assault",
@@ -240,19 +158,9 @@
             "en": "At the moment of use the Ako's Sugar or the Ako's Spiritfall",
             "ru": "При использовании Леденца Ако или Благословения Ако"
         },
-        "color": "#d71c17",
-        "阿": {
-            "pronunciation": "a",
-            "value": "Ah"
-        },
-        "攻": {
-            "pronunciation": "kou",
-            "value": "Attack"
-        }
+        "color": "#d71c17"
     },
     "鬼仏見出": {
-        "hieroglyph": "鬼仏見出",
-        "pronunciation": "onibotoke midashi",
         "type": "other",
         "value": {
             "en": "Sculptor's idol found",
@@ -262,49 +170,21 @@
             "en": "At the moment of finding the sculptor's idol",
             "ru": "При нахождении идола резчика"
         },
-        "color": "#feecac",
-        "鬼": {
-            "pronunciation": "oni",
-            "value": "Demon"
-        },
-        "仏": {
-            "pronunciation": "hotoke",
-            "value": "Buddha"
-        },
-        "見": {
-            "pronunciation": "mi",
-            "value": "See"
-        },
-        "出": {
-            "pronunciation": "de",
-            "value": "Out"
-        }
+        "color": "#feecac"
     },
     "続治": {
-        "hieroglyph": "続治",
-        "pronunciation": "zoku ji",
         "type": "item",
         "value": {
             "en": "Gradual treatment",
             "ru": "Постепенное лечение"
         },
         "description": {
-            "en": "At the moment of use the Pellet",
-            "ru": "При использовании Драже"
+            "en": "At the moment of use the Pellet or the Rise or the Fine Snow",
+            "ru": "При использовании Драже или Риса или Снега"
         },
-        "color": "#8be2c7",
-        "続": {
-            "pronunciation": "zoku",
-            "value": "Continued"
-        },
-        "治": {
-            "pronunciation": "osamu",
-            "value": "Treatment"
-        }
+        "color": "#8be2c7"
     },
     "忍殺": {
-        "hieroglyph": "忍殺",
-        "pronunciation": "shinobu satsu",
         "type": "other",
         "value": {
             "en": "Shinobi execution",
@@ -314,19 +194,9 @@
             "en": "At the moment of killing of the powerful enemy",
             "ru": "При убийстве могущественного врага"
         },
-        "color": "#fff",
-        "忍": {
-            "pronunciation": "shinobu",
-            "value": "Shinobi"
-        },
-        "殺": {
-            "pronunciation": "satsu",
-            "value": "Kill"
-        }
+        "color": "#fff"
     },
     "中毒": {
-        "hieroglyph": "中毒",
-        "pronunciation": "chuudoku",
         "type": "status",
         "value": {
             "en": "Poisoning",
@@ -336,19 +206,9 @@
             "en": "At the moment of poisoning",
             "ru": "При отравлении"
         },
-        "color": "#b9d250",
-        "中": {
-            "pronunciation": "naka",
-            "value": "During"
-        },
-        "毒": {
-            "pronunciation": "docu",
-            "value": "Poison"
-        }
+        "color": "#b9d250"
     },
     "耐毒": {
-        "hieroglyph": "耐毒",
-        "pronunciation": "tai docu",
         "type": "item",
         "value": {
             "en": "Poison resistance",
@@ -358,19 +218,9 @@
             "en": "At the moment of use the Green Mousy Gourd or after use the Antidote Powder",
             "ru": "При использовании Зеленой Мшистой Фляги или после использования Порошка-Противоядия"
         },
-        "color": "#e2ea7d",
-        "耐": {
-            "pronunciation": "tai",
-            "value": "Resistance"
-        },
-        "毒": {
-            "pronunciation": "docu",
-            "value": "Poison"
-        }
+        "color": "#e2ea7d"
     },
     "可隠": {
-        "hieroglyph": "可隠",
-        "pronunciation": "ka in",
         "type": "item",
         "value": {
             "en": "Stealth",
@@ -380,19 +230,9 @@
             "en": "At the moment of use the Gachiin's Sugar or the Gachiin's Spiritfall",
             "ru": "При использовании Леденца Гатиина или Благословения Гатиина"
         },
-        "color": "#78abbc",
-        "可": {
-            "pronunciation": "ka",
-            "value": "Allowed"
-        },
-        "隠": {
-            "pronunciation": "in",
-            "value": "Hidden"
-        }
+        "color": "#78abbc"
     },
     "剛幹": {
-        "hieroglyph": "剛幹",
-        "pronunciation": "tsuyoki",
         "type": "item",
         "value": {
             "en": "Reinforced posture",
@@ -402,19 +242,9 @@
             "en": "At the moment of use the Gokan's Sugar or the Gokan's Spiritfall",
             "ru": "При использовании Леденца Гокана или Благословения Гокана"
         },
-        "color": "#fcfa99",
-        "剛": {
-            "pronunciation": "gou",
-            "value": "Rigidity"
-        },
-        "幹": {
-            "pronunciation": "miki",
-            "value": "Stem"
-        }
+        "color": "#fcfa99"
     },
     "続幹": {
-        "hieroglyph": "続幹",
-        "pronunciation": "zoku miki",
         "type": "item",
         "value": {
             "en": "Gradual recovery posture",
@@ -424,19 +254,9 @@
             "en": "At the moment of use the Sweet Rice Ball or the Persimmon",
             "ru": "При использовании Сладкого Рисового Шарика или Хурмы"
         },
-        "color": "#fcfa99",
-        "続": {
-            "pronunciation": "zoku",
-            "value": "Continued"
-        },
-        "幹": {
-            "pronunciation": "miki",
-            "value": "Stem"
-        }
+        "color": "#fcfa99"
     },
     "怖": {
-        "hieroglyph": "怖",
-        "pronunciation": "kowa",
         "type": "status",
         "value": {
             "en": "Fear",
@@ -449,8 +269,6 @@
         "color": "#8482d6"
     },
     "耐怖": {
-        "hieroglyph": "耐怖",
-        "pronunciation": "tai kowa",
         "type": "item",
         "value": {
             "en": "Terror resistance",
@@ -460,19 +278,9 @@
             "en": "At the moment of use the Mottled Purple Gourd or after use the Pacifying Agent",
             "ru": "При использовании Пёстрой Пурпурной Фляги или после использования Успокаивающего Средства"
         },
-        "color": "#a262d0",
-        "耐": {
-            "pronunciation": "tai",
-            "value": "Resistance"
-        },
-        "怖": {
-            "pronunciation": "kowa",
-            "value": "Fear"
-        }
+        "color": "#a262d0"
     },
     "怖気": {
-        "hieroglyph": "怖気",
-        "pronunciation": "ozoke",
         "type": "status",
         "value": {
             "en": "Terror",
@@ -482,19 +290,9 @@
             "en": "At the moment of terror",
             "ru": "При страхе"
         },
-        "color": "#615aaa",
-        "怖": {
-            "pronunciation": "kowa",
-            "value": "Fear"
-        },
-        "気": {
-            "pronunciation": "ki",
-            "value": "The"
-        }
+        "color": "#615aaa"
     },
     "傀": {
-        "hieroglyph": "傀",
-        "pronunciation": "kai",
         "type": "other",
         "value": {
             "en": "Puppet",
@@ -507,8 +305,6 @@
         "color": "#928ed8"
     },
     "厄憑": {
-        "hieroglyph": "厄憑",
-        "pronunciation": "yaku tsu",
         "type": "other",
         "value": {
             "en": "Sinister burden",
@@ -518,19 +314,9 @@
             "en": "At the moment of ringing on the Demon's bell",
             "ru": "При звонке в Демонический колокол"
         },
-        "color": "#71001f",
-        "厄": {
-            "pronunciation": "yaku",
-            "value": "Disaster"
-        },
-        "憑": {
-            "pronunciation": "tsu",
-            "value": "Possessed"
-        }
+        "color": "#71001f"
     },
     "厄払": {
-        "hieroglyph": "厄払",
-        "pronunciation": "yaku harai",
         "type": "item",
         "value": {
             "en": "Burden dispelled",
@@ -540,19 +326,9 @@
             "en": "At the moment of use the Bell Demon",
             "ru": "При использовании Демона Колокола"
         },
-        "color": "#fff",
-        "厄": {
-            "pronunciation": "yaku",
-            "value": "Disaster"
-        },
-        "払": {
-            "pronunciation": "harai",
-            "value": "Payment"
-        }
+        "color": "#fff"
     },
     "年": {
-        "hieroglyph": "年",
-        "pronunciation": "toshi",
         "type": "status",
         "value": {
             "en": "Enfeeble",
@@ -565,8 +341,6 @@
         "color": "#f0f0ff"
     },
     "年寄": {
-        "hieroglyph": "年寄",
-        "pronunciation": "toshiyori",
         "type": "status",
         "value": {
             "en": "Enfeebled",
@@ -576,19 +350,9 @@
             "en": "At the moment of enfeebled",
             "ru": "При ослаблении"
         },
-        "color": "#f4f0ed",
-        "年": {
-            "pronunciation": "toshi",
-            "value": "Enfeeble"
-        },
-        "寄": {
-            "pronunciation": "yori",
-            "value": "Close"
-        }
+        "color": "#f4f0ed"
     },
     "竜咳快復": {
-        "hieroglyph": "竜咳快復",
-        "pronunciation": "ryuu seki kaifuku",
         "type": "other",
         "value": {
             "en": "Dragonrot healed",
@@ -598,27 +362,9 @@
             "en": "At the moment of use the Dragon's Blood Droplet on an sculptor's idol while having the Recovery Charm",
             "ru": "При использовании Божественной Капли Крови на идоле резчика, имея Амулет Исцеления"
         },
-        "color": "#f2c9c7",
-        "竜": {
-            "pronunciation": "ryuu",
-            "value": "Dragon"
-        },
-        "咳": {
-            "pronunciation": "seki",
-            "value": "Cough"
-        },
-        "快": {
-            "pronunciation": "kai",
-            "value": "Pleasure"
-        },
-        "復": {
-            "pronunciation": "fuku",
-            "value": "Restoration"
-        }
+        "color": "#f2c9c7"
     },
     "不死斬リ": {
-        "hieroglyph": "不死斬リ",
-        "pronunciation": "fushi zan ri",
         "type": "other",
         "value": {
             "en": "Immortality severed",
@@ -628,27 +374,9 @@
             "en": "At the moment of killing of the immortal enemy",
             "ru": "При убийстве бессмертного врага"
         },
-        "color": "#fff",
-        "不": {
-            "pronunciation": "fu",
-            "value": "Not"
-        },
-        "死": {
-            "pronunciation": "shi",
-            "value": "Death"
-        },
-        "斬": {
-            "pronunciation": "zhan",
-            "value": "Cut"
-        },
-        "リ": {
-            "pronunciation": "ri",
-            "value": "The"
-        }
+        "color": "#fff"
     },
     "雷": {
-        "hieroglyph": "雷",
-        "pronunciation": "kaminari",
         "type": "status",
         "value": {
             "en": "Shock",
@@ -661,8 +389,6 @@
         "color": "#fffd91"
     },
     "打雷": {
-        "hieroglyph": "打雷",
-        "pronunciation": "darai",
         "type": "status",
         "value": {
             "en": "Thunderbolt",
@@ -672,19 +398,9 @@
             "en": "At the moment of lightning strike",
             "ru": "При молниеносном ударе"
         },
-        "color": "#f0e399",
-        "打": {
-            "pronunciation": "da",
-            "value": "Strike"
-        },
-        "雷": {
-            "pronunciation": "kaminari",
-            "value": "Lightning"
-        }
+        "color": "#f0e399"
     },
     "耐雷": {
-        "hieroglyph": "耐雷",
-        "pronunciation": "tai rai",
         "type": "item",
         "value": {
             "en": "Lightning resistance",
@@ -694,20 +410,10 @@
             "en": "At the moment of use the Eel Liver",
             "ru": "При использовании Печени Угря"
         },
-        "color": "#f3ed9f",
-        "耐": {
-            "pronunciation": "tai",
-            "value": "Resistance"
-        },
-        "雷": {
-            "pronunciation": "kaminari",
-            "value": "Lightning"
-        }
+        "color": "#f3ed9f"
     },
     "禁薬": {
-        "hieroglyph": "禁薬",
-        "pronunciation": "kin yaku",
-        "type": "item",
+        "type": "status",
         "value": {
             "en": "Treatment blocking",
             "ru": "Блокирование лечения"
@@ -716,19 +422,9 @@
             "en": "At the moment of uses the Shinobi Charm by the Great Shinobi - Owl",
             "ru": "При использовании Амулета Синоби Великим Синоби - Филином"
         },
-        "color": "#78b394",
-        "禁": {
-            "pronunciation": "kin",
-            "value": "Prohibited"
-        },
-        "薬": {
-            "pronunciation": "kusuri",
-            "value": "Medicine"
-        }
+        "color": "#78b394"
     },
     "祓い": {
-        "hieroglyph": "祓い",
-        "pronunciation": "harai",
         "type": "item",
         "value": {
             "en": "Exorcism",
@@ -738,19 +434,9 @@
             "en": "At the moment of use the Divine Confetti",
             "ru": "При использовании Божественных Конфетти"
         },
-        "color": "#c087e6",
-        "祓": {
-            "pronunciation": "harai",
-            "value": "Exorcist"
-        },
-        "い": {
-            "pronunciation": "i",
-            "value": "The"
-        }
+        "color": "#c087e6"
     },
     "夜叉戮": {
-        "hieroglyph": "夜叉戮",
-        "pronunciation": "yasha riku",
         "type": "item",
         "value": {
             "en": "Rampage",
@@ -760,23 +446,9 @@
             "en": "At the moment of use the Yashariku's Sugar or the Yashariku's Spiritfall",
             "ru": "При использовании Леденца Якшарику или Благословения Якшарику"
         },
-        "color": "#d82d23",
-        "夜": {
-            "pronunciation": "ya",
-            "value": "Night"
-        },
-        "叉": {
-            "pronunciation": "mata",
-            "value": "Cross"
-        },
-        "戮": {
-            "pronunciation": "riku",
-            "value": "Slaughter"
-        }
+        "color": "#d82d23"
     },
     "御供": {
-        "hieroglyph": "御供",
-        "pronunciation": "goku",
         "type": "item",
         "value": {
             "en": "Offering",
@@ -786,19 +458,9 @@
             "en": "At the moment of use the Ceremonial Tanto",
             "ru": "При использовании Церемониального Танто"
         },
-        "color": "#e7e3d8",
-        "御": {
-            "pronunciation": "gyo",
-            "value": "Your"
-        },
-        "供": {
-            "pronunciation": "tomo",
-            "value": "Offer"
-        }
+        "color": "#e7e3d8"
     },
     "煙": {
-        "hieroglyph": "煙",
-        "pronunciation": "kemuri",
         "type": "other",
         "value": {
             "en": "Smoke",
@@ -811,8 +473,6 @@
         "color": "#ed5758"
     },
     "纏": {
-        "hieroglyph": "纏",
-        "pronunciation": "mato",
         "type": "other",
         "value": {
             "en": "Imbrue",
@@ -825,8 +485,6 @@
         "color": "#ca463a"
     },
     "拝涙": {
-        "hieroglyph": "拝涙",
-        "pronunciation": "hai namida",
         "type": "other",
         "value": {
             "en": "Gracious gift of tears",
@@ -836,19 +494,9 @@
             "en": "At the moment of receiving tears from the Divine Dragon",
             "ru": "При получении слёз от Божественного Дракона"
         },
-        "color": "#ffd3d5",
-        "拝": {
-            "pronunciation": "hai",
-            "value": "Worship"
-        },
-        "涙": {
-            "pronunciation": "namida",
-            "value": "Tears"
-        }
+        "color": "#ffd3d5"
     },
     "赤目": {
-        "hieroglyph": "赤目",
-        "pronunciation": "akame",
         "type": "item",
         "value": {
             "en": "Red eyes",
@@ -858,19 +506,9 @@
             "en": "At the moment of use the Red Lump",
             "ru": "При использовании Красного Сгустка"
         },
-        "color": "#d03030",
-        "赤": {
-            "pronunciation": "aka",
-            "value": "Red"
-        },
-        "目": {
-            "pronunciation": "me",
-            "value": "Eyes"
-        }
+        "color": "#d03030"
     },
     "御利益": {
-        "hieroglyph": "赤目",
-        "pronunciation": "akame",
         "type": "item",
         "value": {
             "en": "Gain benefits",
@@ -886,18 +524,6 @@
             "#e77990",
             "#9b9b9b",
             "#8dee9a"
-        ],
-        "御": {
-            "pronunciation": "gyo",
-            "value": "Your"
-        },
-        "利": {
-            "pronunciation": "ri",
-            "value": "Profit"
-        },
-        "益": {
-            "pronunciation": "eki",
-            "value": "Gain"
-        }
+        ]
     }
 }
