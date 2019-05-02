@@ -61,12 +61,18 @@ function Scrawl_one(scrawl) {
             && scrawl[i].type == "other") {
             continue;
         }
-        var styleText = typeof (scrawl[i].color) == "string" ? `color:${scrawl[i].color};` :
-            `background:linear-gradient(45deg,${scrawl[i].color.join(",")});
+        var styleText = "";
+        var styleBack = "";
+        if (typeof (scrawl[i].color) != "string") {
+            styleBack = `background:linear-gradient(${scrawl[i].color.join(",")});
             -webkit-background-clip:text;-webkit-text-fill-color:transparent;`;
+        }
+        else {
+            styleText = `color:${scrawl[i].color};`;
+        }
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
-                <div class=\"hieroglyph\">
+                <div class=\"hieroglyph\" style=\"${styleBack}\">
                     <a style=\"${styleText}\" href=\"img\\${i}.jpg\">${i}</a>
                 </div>
                 <div class=\"characteristic\">
@@ -75,7 +81,7 @@ function Scrawl_one(scrawl) {
                 </div>
             </div>`;
     }
-    //console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
+    console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
         _content.innerHTML += `<br>
             <div class=\"scrawl\">
