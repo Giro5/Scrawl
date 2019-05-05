@@ -76,11 +76,13 @@
         #footer {
             /* background: #f0ebf0;
             color: #252529; */
-            font-size: 12px;
+            font-size: 14px;
             box-shadow: #252529a4 0 0 6px 5px;
             background-color: #252529a4;
             border-top-right-radius: 20px;
             border-top-left-radius: 20px;
+            margin: 50px 0 0 0;
+            padding: 0 0 2px 0;
         }
 
         br {
@@ -102,7 +104,7 @@
             width: 300px;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-evenly;
             box-shadow: #252529a4 0 0 6px 5px;
             background-color: #252529a4;
             border-bottom-right-radius: 20px;
@@ -142,15 +144,11 @@
 
 <body>
     <div id="logo"></div>
-    <div id="filters">
-        <div class="filter">Items</div>
-        <div class="filter">Status</div>
-        <div class="filter">Other</div>
-    </div>
+    <div id="filters"></div>
 
     <div id="content"></div>
 
-    <br>
+    <!-- <br> -->
     <div id="footer"></div>
 
     <!-- connections to json -->

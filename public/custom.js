@@ -1,14 +1,14 @@
 //global var
 var _body = document.getElementsByTagName("body")[0];
 var _content = document.getElementById("content");
-var locale = "en";
+var locale = "";
 var logos = {
     "en": "Japanese by Sekiro: Shadows Die Twice",
     "ru": "Японский по Sekiro: Shadows Die Twice"
 };
 var footers = {
     "en": "Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.",
-    "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, не знающим Японский и плохо знающим Английский. С поддержкой анимешника."
+    "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, который не знает Японский и плохо знает Английский. С поддержкой анимешника."
 };
 var filters = {
     "en": ["Items", "Status", "Other"],
@@ -45,7 +45,19 @@ function changeSizeContent() {
         }
     }
 };
-function Scrawl_one(scrawl) {
+function ScrawlString(glyph, value, descrip, styleback, styletext) {
+    return `<br>
+            <div class=\"scrawl\">
+                <div class=\"hieroglyph\" style=\"${styleback}\">
+                    <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\">${glyph}</a>
+                </div>
+                <div class=\"characteristic\">
+                    <p>${value}</p>
+                    <p>${descrip}</p>
+                </div>
+            </div>`;
+}
+function ScrawlBlock(scrawl) {
     //console.log(Object.keys(scrawl).length);
     _content.innerHTML = "";
     for (var i in scrawl) {
@@ -70,43 +82,60 @@ function Scrawl_one(scrawl) {
         else {
             styleText = `color:${scrawl[i].color};`;
         }
-        _content.innerHTML += `<br>
-            <div class=\"scrawl\">
-                <div class=\"hieroglyph\" style=\"${styleBack}\">
-                    <a style=\"${styleText}\" href=\"img\\${i}.jpg\">${i}</a>
-                </div>
-                <div class=\"characteristic\">
-                    <p>${scrawl[i].value[locale]}</p>
-                    <p>${scrawl[i].description[locale]}</p>
-                </div>
-            </div>`;
+        // _content.innerHTML += `<br>
+        //     <div class=\"scrawl\">
+        //         <div class=\"hieroglyph\" style=\"${styleBack}\">
+        //             <a style=\"${styleText}\" href=\"img\\${i}.jpg\">${i}</a>
+        //         </div>
+        //         <div class=\"characteristic\">
+        //             <p>${scrawl[i].value[locale]}</p>
+        //             <p>${scrawl[i].description[locale]}</p>
+        //         </div>
+        //     </div>`;
+        _content.innerHTML += ScrawlString(
+            i,
+            scrawl[i].value[locale],
+            scrawl[i].description[locale],
+            styleBack,
+            styleText
+        );
     }
     console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
-        _content.innerHTML += `<br>
-            <div class=\"scrawl\">
-                <div class=\"hieroglyph\">何も</div>
-                <div class=\"characteristic\">
-                    <p>${zero_scrawls[locale]}</p>
-                    <p>^_^</p>
-                </div>
-            </div>`;
+        // _content.innerHTML += `<br>
+        //     <div class=\"scrawl\">
+        //         <div class=\"hieroglyph\">何も</div>
+        //         <div class=\"characteristic\">
+        //             <p>${zero_scrawls[locale]}</p>
+        //             <p>^_^</p>
+        //         </div>
+        //     </div>`;
+        _content.innerHTML += ScrawlString("何も", zero_scrawls[locale], "^_^", "", "");
     }
 };
-
+//launch code
 if (window.navigator.language == "ru") {
     locale = "ru";
-    for (var i = 0; i < 3; i++)
-        document.getElementsByClassName("filter")[i].innerText = filters.ru[i];
+}
+switch (window.navigator.language) {
+    case "ru":
+        locale = "ru";
+        break;
+    case "en":
+    default:
+        locale = "en";
+        break;
 }
 document.getElementsByTagName("html")[0].setAttribute("lang", locale);
 document.getElementsByTagName("title")[0].innerText = logos[locale];
 document.getElementById("logo").innerText = logos[locale];
+for (var i = 0; i < filters["en"].length; i++)
+    document.getElementById("filters").innerHTML += `<div class="filter">${filters[locale][i]}</div>`;
 document.getElementById("footer").innerText = footers[locale];
 
 loadJSON(function (scrawl) {
     console.dir(scrawl);
-    Scrawl_one(scrawl);
+    ScrawlBlock(scrawl);
     changeSizeContent();
 });
 
@@ -133,7 +162,7 @@ for (var i = 0; i < 3; i++) {
         else
             this.style.textDecorationLine = "";
         loadJSON(function (scrawl) {
-            Scrawl_one(scrawl);
+            ScrawlBlock(scrawl);
             changeSizeContent();
         });
     };
