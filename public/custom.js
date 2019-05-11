@@ -82,16 +82,6 @@ function ScrawlBlock(scrawl) {
         else {
             styleText = `color:${scrawl[i].color};`;
         }
-        // _content.innerHTML += `<br>
-        //     <div class=\"scrawl\">
-        //         <div class=\"hieroglyph\" style=\"${styleBack}\">
-        //             <a style=\"${styleText}\" href=\"img\\${i}.jpg\">${i}</a>
-        //         </div>
-        //         <div class=\"characteristic\">
-        //             <p>${scrawl[i].value[locale]}</p>
-        //             <p>${scrawl[i].description[locale]}</p>
-        //         </div>
-        //     </div>`;
         _content.innerHTML += ScrawlString(
             i,
             scrawl[i].value[locale],
@@ -102,21 +92,11 @@ function ScrawlBlock(scrawl) {
     }
     console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
-        // _content.innerHTML += `<br>
-        //     <div class=\"scrawl\">
-        //         <div class=\"hieroglyph\">何も</div>
-        //         <div class=\"characteristic\">
-        //             <p>${zero_scrawls[locale]}</p>
-        //             <p>^_^</p>
-        //         </div>
-        //     </div>`;
         _content.innerHTML += ScrawlString("何も", zero_scrawls[locale], "^_^", "", "");
     }
 };
-//launch code
-if (window.navigator.language == "ru") {
-    locale = "ru";
-}
+
+//defining locale language
 switch (window.navigator.language) {
     case "ru":
         locale = "ru";
@@ -126,6 +106,7 @@ switch (window.navigator.language) {
         locale = "en";
         break;
 }
+//setting the language
 document.getElementsByTagName("html")[0].setAttribute("lang", locale);
 document.getElementsByTagName("title")[0].innerText = logos[locale];
 document.getElementById("logo").innerText = logos[locale];
@@ -133,6 +114,7 @@ for (var i = 0; i < filters["en"].length; i++)
     document.getElementById("filters").innerHTML += `<div class="filter">${filters[locale][i]}</div>`;
 document.getElementById("footer").innerText = footers[locale];
 
+//first connection to json
 loadJSON(function (scrawl) {
     console.dir(scrawl);
     ScrawlBlock(scrawl);
@@ -144,7 +126,7 @@ _body.onresize = function () {
     changeSizeContent();
 };
 
-//change bg
+//changing bg
 setInterval(function () {
     _body.style.backgroundImage = `url(/img/bg/${k == 5 ? k = 0 : ++k}.jpg)`;
 }, 20000, k = 0);
@@ -155,6 +137,7 @@ for (var i = 1; i < 6; i++) {
     img.src = `/img/bg/${i}.jpg`;
 }
 
+//set an event on filters
 for (var i = 0; i < 3; i++) {
     document.getElementsByClassName("filter")[i].onclick = function () {
         if (this.style.textDecorationLine == "")
