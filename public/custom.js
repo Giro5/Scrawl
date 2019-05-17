@@ -106,6 +106,7 @@ switch (window.navigator.language) {
         locale = "en";
         break;
 }
+
 //setting the language
 document.getElementsByTagName("html")[0].setAttribute("lang", locale);
 document.getElementsByTagName("title")[0].innerText = logos[locale];
