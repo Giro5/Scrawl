@@ -57,6 +57,7 @@ function ScrawlString(glyph, value, descrip, styleback, styletext) {
                 </div>
             </div>`;
 }
+
 function ScrawlBlock(scrawl) {
     //console.log(Object.keys(scrawl).length);
     _content.innerHTML = "";
