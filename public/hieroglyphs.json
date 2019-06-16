@@ -515,15 +515,15 @@
             "ru": "Увеличенная награда"
         },
         "description": {
-            "en": "At the moment of use the Mibu Balloon of Wealth or the Mibu Possession Balloon or the Mibu Balloon of Soul or the Mibu Balloon of Spirit or the Mibu Pilgrimage Balloon",
-            "ru": "При использовании Шара Богатства или Шара Трофеев или Шара Воскрешения или Шара Духов или Шара Паломничества"
+            "en": "At the moment of use the <span style=\"color:#dbd04f\">Mibu Balloon of Wealth</span> or the Mibu Possession Balloon or the Mibu Balloon of Soul or the Mibu Balloon of Spirit or the Mibu Pilgrimage Balloon",
+            "ru": "При использовании <span style=\"color:#f3e863\">Шара Богатства</span> или <span style=\"color:#72d27e\">Шара Трофеев</span> или <span style=\"color:#fb738f\">Шара Воскрешения</span> или <span style=\"color:#a1a1a1\">Шара Духов</span> или <span style=\"background:linear-gradient(45deg,#f6e736,#f9597a,#fff,#39a347);-webkit-background-clip: text;-webkit-text-fill-color: transparent;\">Шара Паломничества</span>"
         },
         "color": [
             "45deg",
-            "#dfd77b",
-            "#e77990",
-            "#9b9b9b",
-            "#8dee9a"
+            "#dbd04f",
+            "#d65872",
+            "#fdfafa",
+            "#3dd952"
         ]
     }
 }
