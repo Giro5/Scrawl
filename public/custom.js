@@ -3,8 +3,8 @@ var _body = document.getElementsByTagName("body")[0];
 var _content = document.getElementById("content");
 var locale = "";
 var logos = {
-    "en": "Japanese by Sekiro: Shadows Die Twice",
-    "ru": "Японский по Sekiro: Shadows Die Twice"
+    "en": "Hieroglyphs from Sekiro: Shadows Die Twice",
+    "ru": "Иероглифы из Sekiro: Shadows Die Twice"
 };
 var footers = {
     "en": "Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.",
