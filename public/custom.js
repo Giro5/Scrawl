@@ -7,8 +7,8 @@ var logos = {
     "ru": "Иероглифы из Sekiro: Shadows Die Twice"
 };
 var footers = {
-    "en": "Copyright (c) 2019 Giro. The site was created by a person who does not know Japanese and does not know English well. With support anime-viewer.",
-    "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, который не знает Японский и плохо знает Английский. С поддержкой анимешника."
+    "en": "Copyright (c) 2019 Giro. The site was created by a person who doesn't know Japanese and doesn't know English well. Supported by a weebs.",
+    "ru": "Copyright (c) 2019 Giro. Сайт был создан человеком, который не знает Японский и плохо знает Английский. При поддержке анимешника."
 };
 var filters = {
     "en": ["Items", "Status", "Other"],

@@ -515,8 +515,8 @@
             "ru": "Увеличенная награда"
         },
         "description": {
-            "en": "At the moment of use the <span style=\"color:#dbd04f\">Mibu Balloon of Wealth</span> or the Mibu Possession Balloon or the Mibu Balloon of Soul or the Mibu Balloon of Spirit or the Mibu Pilgrimage Balloon",
-            "ru": "При использовании <span style=\"color:#f3e863\">Шара Богатства</span> или <span style=\"color:#72d27e\">Шара Трофеев</span> или <span style=\"color:#fb738f\">Шара Воскрешения</span> или <span style=\"color:#a1a1a1\">Шара Духов</span> или <span style=\"background:linear-gradient(45deg,#f6e736,#f9597a,#fff,#39a347);-webkit-background-clip: text;-webkit-text-fill-color: transparent;\">Шара Паломничества</span>"
+            "en": "At the moment of use the <span style=\"color:#f3e863\">Mibu Balloon of Wealth</span> or Mibu Possession Balloon or Mibu Balloon of Soul or Mibu Balloon of Spirit or Mibu Pilgrimage Balloon",
+            "ru": "При использовании <a href=\"#\" style=\"color:#f3e863;text-shadow:currentColor 0 0 15px;text-decoration:none;\">Шара Богатства</a> или <a style=\"color:#72d27e\">Шара Трофеев</a> или <a style=\"color:#fb738f\">Шара Воскрешения</a> или <a style=\"color:#a1a1a1\">Шара Духов</a> или <a style=\"background:linear-gradient(45deg,#f6e736,#f9597a,#fff,#39a347);-webkit-background-clip:text;-webkit-text-fill-color:transparent;\">Шара Паломничества</a>"
         },
         "color": [
             "45deg",

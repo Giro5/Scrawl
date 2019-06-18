@@ -74,7 +74,7 @@ br {
 
 a {
     text-decoration: none;
-    color: #e5e0e5;
+    color: transparent;
 }
 
 #filters {
@@ -105,5 +105,5 @@ a {
 }
 
 .hieroglyph:hover {
-    text-shadow: currentColor 0 0 5px;
+    text-shadow: currentColor 0 0 15px;
 }
