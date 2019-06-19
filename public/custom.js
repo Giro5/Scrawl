@@ -93,7 +93,7 @@ function ScrawlBlock(scrawl) {
     }
     console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
-        _content.innerHTML += ScrawlString("何も", zero_scrawls[locale], "^_^", "", "");
+        _content.innerHTML += ScrawlString("何も", zero_scrawls[locale], "^_^", "", "color:#e5e0e5;");
     }
 };
 
