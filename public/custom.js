@@ -46,8 +46,8 @@ function changeSizeContent() {
     }
 };
 function ScrawlString(glyph, value, descrip, styleback, styletext) {
-    return `<br>
-            <div class=\"scrawl\">
+    return `
+            <div class=\"scrawl\" id=\"${glyph}\">
                 <div class=\"hieroglyph\" style=\"${styleback}\">
                     <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\">${glyph}</a>
                 </div>
