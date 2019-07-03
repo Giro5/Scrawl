@@ -2,8 +2,8 @@
     "隻狼": {
         "type": "other",
         "value": {
-            "en": "One-armed wolf",
-            "ru": "Однорукий волк"
+            "en": "Sekiro - One-armed wolf",
+            "ru": "Секиро - Однорукий волк"
         },
         "description": {
             "en": "Character moniker and game title",
@@ -167,7 +167,7 @@
             "ru": "Найден идол резчика"
         },
         "description": {
-            "en": "At the moment of finding the sculptor's idol",
+            "en": "At the moment of finding the Sculptor's Idol",
             "ru": "При нахождении идола резчика"
         },
         "color": "#feecac"
@@ -260,7 +260,7 @@
         "type": "status",
         "value": {
             "en": "Fear",
-            "ru": "Испуг"
+            "ru": "Страх"
         },
         "description": {
             "en": "At the moment of fear",
@@ -284,11 +284,11 @@
         "type": "status",
         "value": {
             "en": "Terror",
-            "ru": "Страх"
+            "ru": "Террор"
         },
         "description": {
-            "en": "At the moment of terror",
-            "ru": "При страхе"
+            "en": "At the moment of death by fear",
+            "ru": "При смерти от испуга"
         },
         "color": "#615aaa"
     },
@@ -331,8 +331,8 @@
     "年": {
         "type": "status",
         "value": {
-            "en": "Enfeeble",
-            "ru": "Ослабление"
+            "en": "Enfeebled",
+            "ru": "Слабость"
         },
         "description": {
             "en": "At the moment of enfeeblement",
@@ -343,12 +343,12 @@
     "年寄": {
         "type": "status",
         "value": {
-            "en": "Enfeebled",
-            "ru": "Ослабленный"
+            "en": "Fatigue",
+            "ru": "Изнеможение"
         },
         "description": {
-            "en": "At the moment of enfeebled",
-            "ru": "При ослаблении"
+            "en": "At the moment of exhausted",
+            "ru": "При истощении"
         },
         "color": "#f4f0ed"
     },
