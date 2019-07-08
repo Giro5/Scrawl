@@ -14,10 +14,12 @@ var filters = {
     "en": ["Items", "Status", "Other"],
     "ru": ["Предметы", "Статусы", "Другое"]
 };
-var zero_scrawls = {
+var zero_scrawl = {
     "en": "Nothing",
     "ru": "Ничего"
 };
+var scrawls = {};
+
 //global functions
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
@@ -30,6 +32,7 @@ function loadJSON(callback) {
     };
     xobj.send(null);
 };
+
 function changeSizeContent() {
     var collel = document.getElementsByClassName("scrawl");
     if (_body.clientWidth < 800) {
@@ -45,20 +48,21 @@ function changeSizeContent() {
         }
     }
 };
+
 function ScrawlString(glyph, value, descrip, styleback, styletext) {
     return `
             <div class=\"scrawl\" id=\"${glyph}\">
                 <div class=\"hieroglyph\" style=\"${styleback}\">
                     <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\">${glyph}</a>
                 </div>
-                <div class=\"characteristic\">
+                <div class=\"inf\">
                     <p>${value}</p>
                     <p>${descrip}</p>
                 </div>
             </div>`;
 }
 
-function ScrawlBlock(scrawl) {
+function ScrawlBlocks(scrawl) {
     //console.log(Object.keys(scrawl).length);
     _content.innerHTML = "";
     for (var i in scrawl) {
@@ -93,7 +97,7 @@ function ScrawlBlock(scrawl) {
     }
     console.log("count scrawl " + _content.getElementsByClassName("scrawl").length);
     if (_content.getElementsByClassName("scrawl").length == 0) {
-        _content.innerHTML += ScrawlString("何も", zero_scrawls[locale], "^_^", "", "color:#e5e0e5;");
+        _content.innerHTML += ScrawlString("何も", zero_scrawl[locale], "^_^", "", "color:#e5e0e5;");
     }
 };
 
@@ -118,10 +122,14 @@ document.getElementById("footer").innerText = footers[locale];
 
 //first connection to json
 loadJSON(function (scrawl) {
-    console.dir(scrawl);
-    ScrawlBlock(scrawl);
-    changeSizeContent();
+    // console.dir(scrawl);
+    // ScrawlBlocks(scrawl);
+    scrawls = scrawl;
+    // changeSizeContent();
 });
+console.dir(scrawls);
+ScrawlBlocks(scrawls);
+changeSizeContent();
 
 //defining the window resolution
 _body.onresize = function () {
@@ -146,10 +154,11 @@ for (var i = 0; i < 3; i++) {
             this.style.textDecorationLine = "line-through";
         else
             this.style.textDecorationLine = "";
-        loadJSON(function (scrawl) {
-            ScrawlBlock(scrawl);
-            changeSizeContent();
-        });
+        // loadJSON(function (scrawl) {
+        //     ScrawlBlocks(scrawl);
+        //     changeSizeContent();
+        // });
+        ScrawlBlocks(scrawls);
     };
 }
 
