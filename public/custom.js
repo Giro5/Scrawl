@@ -138,11 +138,12 @@ _body.onresize = function () {
 
 //changing bg
 setInterval(function () {
-    _body.style.backgroundImage = `url(/img/bg/${k == 5 ? k = 0 : ++k}.jpg)`;
+    _body.style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
+    console.log(k);
 }, 20000, k = 0);
 
 //loading other bg
-for (var i = 1; i < 6; i++) {
+for (var i = 1; i < 11; i++) {
     var img = new Image();
     img.src = `/img/bg/${i}.jpg`;
 }
