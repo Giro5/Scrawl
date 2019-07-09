@@ -122,14 +122,11 @@ document.getElementById("footer").innerText = footers[locale];
 
 //first connection to json
 loadJSON(function (scrawl) {
-    // console.dir(scrawl);
-    // ScrawlBlocks(scrawl);
+    console.dir(scrawl);
+    ScrawlBlocks(scrawl);
     scrawls = scrawl;
-    // changeSizeContent();
+    changeSizeContent();
 });
-console.dir(scrawls);
-ScrawlBlocks(scrawls);
-changeSizeContent();
 
 //defining the window resolution
 _body.onresize = function () {

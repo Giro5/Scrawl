@@ -1,4 +1,3 @@
-//global var
 var _body = document.getElementsByTagName("body")[0];
 var _content = document.getElementById("content");
 var locale = "";
