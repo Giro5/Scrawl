@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+br {
+    font-size: 50px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
 body {
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -17,34 +29,11 @@ body {
     min-height: -webkit-fill-available;
 }
 
-.scrawl {
-    font-size: 30px;
+#wrapper {
+    min-height: -webkit-fill-available;
     display: flex;
-    align-items: center;
-    box-shadow: #252529a4 0 0 6px 5px;
-    background-color: #252529a4;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 25px 0;
-}
-
-#content {
-    width: 800px;
-    margin: auto;
-}
-
-.inf {
-    margin: auto;
-}
-
-.hieroglyph {
-    font-family: SimSun, NSimSun;
-    font-size: 100px;
-    word-wrap: break-word;
-    width: 100px;
-    padding: 5px;
-    /* transition: text-shadow 300ms linear; */
-    text-shadow: currentColor 0 0 0;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 #logo {
@@ -53,28 +42,6 @@ body {
     background-color: #252529a4;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-
-#footer {
-    font-size: 14px;
-    box-shadow: #252529a4 0 0 6px 5px;
-    background-color: #252529a4;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    margin: 50px auto 0 auto;
-    padding: 0 0 2px 0;
-}
-
-br {
-    font-size: 50px;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-a {
-    text-decoration: none;
-    color: transparent;
 }
 
 #filters {
@@ -104,6 +71,46 @@ a {
     color: #b8b5b8;
 }
 
+#content {
+    width: 800px;
+    margin: auto;
+}
+
+.scrawl {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: #252529a4 0 0 6px 5px;
+    background-color: #252529a4;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 25px 0;
+}
+
+.hieroglyph {
+    font-family: SimSun, NSimSun;
+    font-size: 100px;
+    word-wrap: break-word;
+    width: 100px;
+    padding: 5px;
+    /* transition: text-shadow 300ms linear; */
+    text-shadow: currentColor 0 0 0;
+}
+
 .hieroglyph:hover {
     text-shadow: currentColor 0 0 15px;
+}
+
+.inf {
+    margin: auto;
+}
+
+#footer {
+    font-size: 14px;
+    box-shadow: #252529a4 0 0 6px 5px;
+    background-color: #252529a4;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 50px auto 0 auto;
+    padding: 0 0 2px 0;
 }
