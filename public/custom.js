@@ -152,8 +152,7 @@ for (var i = 1; i < 11; i++) {
 for (var i = 0; i < 3; i++) {
     document.getElementsByClassName("filter")[i].onclick = function () {
         if (this.style.textDecorationLine == "") {
-            // this.style.textDecorationLine = "line-through";
-            document.location.href = document.location.href.split("?")[0] + "?items='loh'";
+            this.style.textDecorationLine = "line-through";
         }
         else
             this.style.textDecorationLine = "";
