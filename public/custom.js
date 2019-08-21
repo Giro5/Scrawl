@@ -164,6 +164,10 @@ for (var i = 0; i < 3; i++) {
     };
 }
 
+document.getElementById("lang").onselect = function () {
+
+};
+
 //methods of connection to json
 
 //first method

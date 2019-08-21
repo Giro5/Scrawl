@@ -503,8 +503,8 @@
             "ru": "Красные глаза"
         },
         "description": {
-            "en": "At the moment of use the Red Lump",
-            "ru": "При использовании Красного Сгустка"
+            "en": "At the moment of use the <a href=\"\"style=\"color:#d03030\">Red Lump</a>",
+            "ru": "При использовании <a href=\"\"style=\"color:#d03030\">Красного Сгустка</a>"
         },
         "color": "#d03030"
     },
@@ -515,8 +515,8 @@
             "ru": "Увеличенная награда"
         },
         "description": {
-            "en": "At the moment of use the <span style=\"color:#f3e863\">Mibu Balloon of Wealth</span> or Mibu Possession Balloon or Mibu Balloon of Soul or Mibu Balloon of Spirit or Mibu Pilgrimage Balloon",
-            "ru": "При использовании <a href=\"#\" style=\"color:#f3e863;text-shadow:currentColor 0 0 15px;text-decoration:none;\">Шара Богатства</a> или <a style=\"color:#72d27e\">Шара Трофеев</a> или <a style=\"color:#fb738f\">Шара Воскрешения</a> или <a style=\"color:#a1a1a1\">Шара Духов</a> или <a style=\"background:linear-gradient(45deg,#f6e736,#f9597a,#fff,#39a347);-webkit-background-clip:text;-webkit-text-fill-color:transparent;\">Шара Паломничества</a>"
+            "en": "At the moment of use the <a href=\"\"style=\"color:#f3e863\">Mibu Balloon of Wealth</a> or <a href=\"\"style=\"color:#72d27e\">Mibu Possession Balloon</a> or <a href=\"\"style=\"color:#fb738f\">Mibu Balloon of Soul</a> or <a href=\"\"style=\"color:#a1a1a1\">Mibu Balloon of Spirit</a> or <a href=\"\"style=\"background:linear-gradient(45deg,#f6e736,#f9597a,#fff,#39a347);-webkit-background-clip:text;-webkit-text-fill-color:transparent\">Mibu Pilgrimage Balloon</a>",
+            "ru": "При использовании <a href=\"\"style=\"color:#f3e863\">Шара Богатства</a> или <a href=\"\"style=\"color:#72d27e\">Шара Трофеев</a> или <a href=\"\"style=\"color:#fb738f\">Шара Воскрешения</a> или <a href=\"\"style=\"color:#a1a1a1\">Шара Духов</a> или <a href=\"\"style=\"background:linear-gradient(45deg,#f6e736,#f9597a,#fff,#39a347);-webkit-background-clip:text;-webkit-text-fill-color:transparent\">Шара Паломничества</a>"
         },
         "color": [
             "45deg",
