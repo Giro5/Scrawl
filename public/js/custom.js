@@ -168,6 +168,29 @@ for (var i = 0; i < 3; i++) {
 
 document.getElementById("lang").onchange = function (e) {
     console.log(e.target.value);
+    locale = e.target.value;
+    document.getElementsByTagName("html")[0].setAttribute("lang", locale);
+    document.getElementsByTagName("title")[0].innerText = logos[locale];
+    document.getElementById("logo").innerText = logos[locale];
+    document.getElementById("filters").innerHTML = "";
+    for (var i = 0; i < filters["en"].length; i++)
+        document.getElementById("filters").innerHTML += `<div class="filter">${filters[locale][i]}</div>`;
+    document.getElementById("footer").innerText = footers[locale];
+    ScrawlBlocks(scrawls);
+    for (var i = 0; i < 3; i++) {
+        document.getElementsByClassName("filter")[i].onclick = function () {
+            if (this.style.textDecorationLine == "") {
+                this.style.textDecorationLine = "line-through";
+            }
+            else
+                this.style.textDecorationLine = "";
+            // loadJSON(function (scrawl) {
+            //     ScrawlBlocks(scrawl);
+            //     changeSizeContent();
+            // });
+            ScrawlBlocks(scrawls);
+        };
+    }
 };
 
 //methods of connection to json
