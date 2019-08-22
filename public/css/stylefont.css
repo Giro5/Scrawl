@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('/font/FuturaDemiC.ttf');
+    src: url('/fonts/FuturaDemiC.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'FuturaMediumC';
-    src: url('/font/FuturaMediumC.ttf');
+    src: url('/fonts/FuturaMediumC.ttf');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'FuturaLightC';
-    src: url('/font/FuturaLightC.ttf');
+    src: url('/fonts/FuturaLightC.ttf');
     font-weight: 300;
 }
 
