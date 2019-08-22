@@ -27,11 +27,11 @@ body {
     font-family: FuturaBookC;
     background-color: #252529;
     color: #e5e0e5;
-    background-size: cover;
+    /* background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-image: url(/img/bg/0.jpg);
-    transition: background-image 3s linear;
+    transition: background-image 3s linear; */
     min-height: -webkit-fill-available;
 }
 
@@ -40,9 +40,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* background-image: url(/img/bg/0.jpg); */
+    transition: background-image 3s linear;
 }
-
-#nav {}
 
 #logo {
     font-size: 40px;
@@ -103,10 +106,6 @@ body {
     padding: 5px;
     /* transition: text-shadow 300ms linear; */
     text-shadow: currentColor 0 0 0;
-}
-
-.hieroglyph:hover {
-    /* text-shadow: currentColor 0 0 15px; */
 }
 
 .inf {

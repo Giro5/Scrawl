@@ -24,7 +24,7 @@ var scrawls = {};
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open("GET", "hieroglyphs.json", true);
+    xobj.open("GET", "json/hieroglyphs.json", true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(JSON.parse(xobj.responseText));
@@ -112,6 +112,7 @@ switch (window.navigator.language) {
         break;
 }
 
+
 //setting the language
 document.getElementsByTagName("html")[0].setAttribute("lang", locale);
 document.getElementsByTagName("title")[0].innerText = logos[locale];
@@ -138,7 +139,8 @@ _body.onresize = function () {
 
 //changing bg
 setInterval(function () {
-    _body.style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
+    // _body.style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
+    document.getElementById("wrapper").style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
     console.log(k);
 }, 20000, k = 0);
 
@@ -164,8 +166,8 @@ for (var i = 0; i < 3; i++) {
     };
 }
 
-document.getElementById("lang").onselect = function () {
-
+document.getElementById("lang").onchange = function (e) {
+    console.log(e.target.value);
 };
 
 //methods of connection to json

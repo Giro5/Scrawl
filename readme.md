@@ -1,1 +1,1 @@
-# Japanese by Sekiro: Shadows Die Twice
+# Hieroglyphs from Sekiro: Shadows Die Twice

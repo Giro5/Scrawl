@@ -263,7 +263,7 @@
             "ru": "Страх"
         },
         "description": {
-            "en": "At the moment of fear",
+            "en": "At the moment of fright",
             "ru": "При испуге"
         },
         "color": "#8482d6"
@@ -287,7 +287,7 @@
             "ru": "Террор"
         },
         "description": {
-            "en": "At the moment of death by fear",
+            "en": "At the moment of death from scare",
             "ru": "При смерти от испуга"
         },
         "color": "#615aaa"
