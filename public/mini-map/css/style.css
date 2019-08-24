@@ -48,35 +48,40 @@
 
 /* Presentational Styles */
 
-/* html {
-  font-size: 52.6%;
+html {
+    font-size: 52.6%;
 }
+
 body {
-  font: 1.6rem/1.6 sans-serif;
-  background: white;
-  background-repeat: repeat-x;
-  background-size: cover;
-  max-width: 100%;
-  overflow-x: hidden;
+    font: 1.6rem/1.6 sans-serif;
+    background: white;
+    background-repeat: repeat-x;
+    background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 .content {
-  max-width: 26em;
-  padding: 2em;
-  margin: auto;
+    max-width: 26em;
+    padding: 2em;
+    margin: auto;
 }
+
 p {
-  margin: 0 0 2em;
+    margin: 0 0 2em;
 }
+
 img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 2em;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2em;
 }
+
 img {
-  display: block;
-  position: relative;
-  left: -50vw;
-  margin-left: 50%;
-  width: 100vw;
-  max-width: none;
-} */
+    display: block;
+    position: relative;
+    left: -50vw;
+    margin-left: 50%;
+    width: 100vw;
+    max-width: none;
+}
