@@ -1,23 +1,23 @@
 @font-face {
     font-family: 'FuturaDemiC';
-    src: url('fonts/FuturaDemiC.ttf');
+    src: url('/public/fonts/FuturaDemiC.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'FuturaMediumC';
-    src: url('fonts/FuturaMediumC.ttf');
+    src: url('/public/fonts/FuturaMediumC.ttf');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'FuturaLightC';
-    src: url('fonts/FuturaLightC.ttf');
+    src: url('/public/fonts/FuturaLightC.ttf');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'FuturaBookC';
-    src: url('fonts/FuturaBookC.ttf');
+    src: url('/public/fonts/FuturaBookC.ttf');
     font-weight: normal;
 }
