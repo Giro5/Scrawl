@@ -152,7 +152,7 @@ setInterval(function () {
 //loading other bg
 for (var i = 1; i < 11; i++) {
     var img = new Image();
-    img.src = `/img/bg/${i}.jpg`;
+    img.src = `img/bg/${i}.jpg`;
 }
 
 //set an event on filters
