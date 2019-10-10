@@ -1,7 +1,7 @@
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open("GET", "hieroglyphs.json", true);
+    xobj.open("GET", "json/hieroglyphs.json", true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             callback(JSON.parse(xobj.responseText));
@@ -30,11 +30,11 @@ function ScrawlString(glyph, value, descrip, styleback, styletext) {
     return `
             <div class=\"scrawl\" id=\"${glyph}\">
                 <div class=\"hieroglyph\" style=\"${styleback}\">
-                    <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\">${glyph}</a>
+                    <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\" target="_blank">${glyph}</a>
                 </div>
                 <div class=\"inf\">
                     <p>${value}</p>
-                    <p>${descrip}</p>
+                    <p class="desc">${descrip}</p>
                 </div>
             </div>`;
 }
