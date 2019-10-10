@@ -53,7 +53,7 @@ function ScrawlString(glyph, value, descrip, styleback, styletext) {
     return `
             <div class=\"scrawl\" id=\"${glyph}\">
                 <div class=\"hieroglyph\" style=\"${styleback}\">
-                    <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\">${glyph}</a>
+                    <a style=\"${styletext}\" href=\"img\\${glyph}.jpg\" target="_blank">${glyph}</a>
                 </div>
                 <div class=\"inf\">
                     <p>${value}</p>
