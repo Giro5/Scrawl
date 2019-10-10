@@ -57,7 +57,7 @@ function ScrawlString(glyph, value, descrip, styleback, styletext) {
                 </div>
                 <div class=\"inf\">
                     <p>${value}</p>
-                    <p>${descrip}</p>
+                    <p class="desc">${descrip}</p>
                 </div>
             </div>`;
 }
@@ -139,8 +139,8 @@ _body.onresize = function () {
 
 //changing bg
 setInterval(function () {
-    // _body.style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
-    document.getElementById("wrapper").style.backgroundImage = `url(img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
+    _body.style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
+    // document.getElementById("wrapper").style.backgroundImage = `url(img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
     console.log(k);
 }, 20000, k = 0);
 
