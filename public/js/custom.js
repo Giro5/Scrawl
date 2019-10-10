@@ -1,4 +1,3 @@
-console.log(1);
 //global var
 var _body = document.getElementsByTagName("body")[0];
 var _content = document.getElementById("content");
@@ -32,8 +31,6 @@ function loadJSON(callback) {
         }
     };
     xobj.send(null);
-    console.log(1.5);
-
 };
 
 function changeSizeContent() {
@@ -102,8 +99,6 @@ function ScrawlBlocks(scrawl) {
     if (_content.getElementsByClassName("scrawl").length == 0) {
         _content.innerHTML += ScrawlString("何も", zero_scrawl[locale], "^_^", "", "color:#e5e0e5;");
     }
-    console.log(1.8);
-
 };
 
 //defining locale language
@@ -197,8 +192,6 @@ document.getElementById("lang").onchange = function (e) {
         };
     }
 };
-
-console.log(1);
 
 //methods of connection to json
 
