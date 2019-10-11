@@ -38,16 +38,22 @@ _body.onresize = function () {
 
 //changing bg
 setInterval(function () {
-    _body.style.backgroundImage = `url(/img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
+    _body.style.backgroundImage = `url(img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
     // document.getElementById("wrapper").style.backgroundImage = `url(img/bg/${k == 10 ? k = 0 : ++k}.jpg)`;
-    console.log(k);
+    if (k < 10) {
+        let img = new Image();
+        img.src = `img/bg/${k + 1}.jpg`;
+    }
 }, 20000, k = 0);
+let img = new Image();
+img.src = `img/bg/1.jpg`;
+img = null;
 
 //loading other bg
-for (var i = 1; i < 11; i++) {
-    var img = new Image();
-    img.src = `img/bg/${i}.jpg`;
-}
+// for (var i = 1; i < 11; i++) {
+//     var img = new Image();
+//     img.src = `img/bg/${i}.jpg`;
+// }
 
 //set an event on filters
 for (var i = 0; i < 3; i++) {
