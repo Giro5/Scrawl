@@ -49,12 +49,6 @@ let img = new Image();
 img.src = `img/bg/1.jpg`;
 img = null;
 
-//loading other bg
-// for (var i = 1; i < 11; i++) {
-//     var img = new Image();
-//     img.src = `img/bg/${i}.jpg`;
-// }
-
 //set an event on filters
 for (var i = 0; i < 3; i++) {
     document.getElementsByClassName("filter")[i].onclick = function () {
