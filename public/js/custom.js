@@ -84,6 +84,13 @@ document.getElementById("lang").onchange = function (e) {
     }
 };
 
+let urllistener = new URLSearchParams(window.location.href.split("?")[1]);
+urllistener.forEach(function (value, key) {
+    console.log(key + " = " + value);
+});
+
+
+
 //methods of connection to json
 
 //first method
