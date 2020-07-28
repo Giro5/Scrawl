@@ -94,7 +94,7 @@ body {
 
 .hieroglyph {
     /* font-family: SimSun, NSimSun; */
-    font-family: "YuzuPenP";
+    font-family: "HakusyuKaisyoBold", "YuzuPenP";
     font-size: 100px;
     word-wrap: break-word;
     width: 100px;

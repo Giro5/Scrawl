@@ -21,3 +21,9 @@
     src: url('../fonts/YuzuPenP.ttf');
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "HakusyuKaisyoBold";
+    src: url("../fonts/HakusyuKaisyoBold.ttf");
+    font-weight: normal;
+}
