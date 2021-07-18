@@ -27,3 +27,8 @@
     src: url("../fonts/HakusyuKaisyoBold.ttf");
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "Iwata-Kaisho";
+    src: url("../fonts/Iwata-Kaisho.otf");
+}
