@@ -94,8 +94,7 @@ body {
 
 .hieroglyph {
     /* font-family: SimSun, NSimSun; */
-    /* font-family: "HakusyuKaisyoBold", "YuzuPenP"; */
-    font-family: "Iwata-Kaisho";
+    font-family: Iwata-Kaisho, SimSun;
     font-size: 100px;
     word-wrap: break-word;
     width: 100px;
