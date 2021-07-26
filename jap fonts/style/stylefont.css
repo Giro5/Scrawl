@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "FuturaLightC";
+    src: url('../fonts/FuturaLightC.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "FuturaBookC";
+    src: url('../fonts/FuturaBookC.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SimSun";
+    src: url("../fonts/SimSun.ttf");
+}
+
+@font-face {
+    font-family: "YuzuPenP";
+    src: url('../fonts/YuzuPenP.ttf');
+}
+
+/* not all symbols */
+
+@font-face {
+    font-family: "HakusyuKaisyoBold";
+    src: url("../fonts/HakusyuKaisyoBold.ttf");
+}
+
+/* rofl banana to SNsana*/
+
+@font-face {
+    font-family: "ArmedBanana";
+    src: url("../fonts/ArmedBanana.ttf");
+}
+
+@font-face {
+    font-family: "MakibaFontP13";
+    src: url("../fonts/MakibaFontP13.ttf");
+}
+
+@font-face {
+    font-family: "RiiT_F";
+    src: url("../fonts/RiiT_F.otf");
+}
+
+@font-face {
+    font-family: "SNsanafonmaruP";
+    src: url("../fonts/SNsanafonmaruP.ttf");
+}
+
+/* AoyagiSosekiFont KouzanMouhituFont AoyagiKouzanT KouzanGyousho KouzanBrushFontSousyo*/
+
+@font-face {
+    font-family: "AoyagiSosekiFont";
+    src: url("../fonts/AoyagiSosekiFont.ttf");
+}
+
+@font-face {
+    font-family: "KouzanMouhituFont";
+    src: url("../fonts/KouzanMouhituFont.ttf");
+}
+
+@font-face {
+    font-family: "AoyagiKouzanT";
+    src: url("../fonts/AoyagiKouzanT.ttf");
+}
+
+@font-face {
+    font-family: "KouzanGyousho";
+    src: url("../fonts/KouzanGyousho.ttf");
+}
+
+@font-face {
+    font-family: "aoyagireisyosimo";
+    src: url("../fonts/aoyagireisyosimo.ttf");
+}
+
+@font-face {
+    font-family: "KouzanBrushFontSousyo";
+    src: url("../fonts/KouzanBrushFontSousyo.ttf");
+}
+
+/* KaishouDemo Iwata-Kaisho hkgokukaikk*/
+
+@font-face {
+    font-family: "KaishouDemo";
+    src: url("../fonts/KaishouDemo.ttf");
+}
+
+@font-face {
+    font-family: "Iwata-Kaisho";
+    src: url("../fonts/Iwata-Kaisho.otf");
+}
+
+@font-face {
+    font-family: "hkgokukaikk";
+    src: url("../fonts/hkgokukaikk.ttf");
+}
